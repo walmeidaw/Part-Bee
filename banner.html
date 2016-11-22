@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Part Bee - Banner</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="Vendor/jquery/jquery.min.js"></script>
+
+    <!--bootstrap -->
+    <link rel="stylesheet" href="Vendor/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="Vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="Vendor/animate.css/animate.css" />
+
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="Vendor/owl-carousel/assets/owl.carousel.css" />
+    <script type="text/javascript" src="Vendor/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="Vendor/font-awesome/css/font-awesome.min.css" />
+
+    <!-- Slidefy -->
+    <link rel="stylesheet" href="Vendor/slidefy/slidefy.css" />
+    <script type="text/javascript" src="Vendor/slidefy/slidefy.js"></script>
+
+    <!-- Part Bee  -->
+    <link rel="stylesheet" href="Vendor/pbee/styles.css" />
+    <link rel="stylesheet" href="Vendor/pbee/debug-style.css" />
+    <script type="text/javascript" src="Vendor/pbee/debug-style.js"></script>
+
+    <!-- projeto -->
+    <link rel="stylesheet" href="Content/styles/default-banner.css" />
+
+    <style media="screen">
+        .holder {
+            height: 450px;
+            display: block;
+            background: #df285a;
+            position: relative;
+
+            font-family: "Open Sans";
+            font-weight: 300;
+            margin: 0px;
+            padding: 0px;
+            line-height: 1;
+        }
+
+        .holder.dark{
+            background: #df285a;
+        }
+    </style>
+</head>
+
+<body id="shower">
+    <div class="insider">
+        <!-- PART BEE - BANNER-FEATURED -->
+        <div class="banner-featured">
+            <div class="item">
+                <div class="holder">
+                </div>
+                <div class="caption col-xs-12 col-md-6 ">
+                    <p>Item 1</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="holder dark">
+                </div>
+                <div class="caption col-xs-12 col-md-6 ">
+                    <p>Item 2</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="holder">
+                </div>
+                <div class="caption col-xs-12 col-md-6 ">
+                    <p>Item 3</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="holder dark">
+                </div>
+                <div class="caption col-xs-12 col-md-6 ">
+                    <p>Item 4</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.banner-featured').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                items: 1
+            })
+        </script>
+    </div>
+    <div id="develpedby">
+        Desenvolvido por <a href="https://github.com/walmeidaw" title="@walmeidaw">Willian Almeida Rodrigues</a>, 2016 &copy;
+    </div>
+</body>
+
+</html>

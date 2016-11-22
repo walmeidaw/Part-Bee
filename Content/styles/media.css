@@ -1,0 +1,18 @@
+/* Se for gigante */
+@media (min-width: 1960px) {
+}
+
+/* Se for grande */
+@media (max-width: 1959px) {}
+
+/* Se for médio */
+@media (max-width: 1199px) {
+}
+
+/* Se for pequeno */
+@media (max-width: 991px) {
+}
+
+/* Se for bem pequeno */
+@media (max-width: 767px) {
+}

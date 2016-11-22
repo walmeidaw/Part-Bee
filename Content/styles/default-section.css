@@ -1,0 +1,40 @@
+.section{
+    padding: 45px 0px;
+}
+.section .header h2{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
+    padding: 15px 0px;
+    font-weight: 300;
+}
+.section .section-body{
+    padding: 15px 0px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.section .section-body .mini{
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding: 15px 0px;
+}
+.section img{
+    max-width: 100%;
+}
+
+@media (min-width: 1960px) {
+}
+@media (max-width: 1959px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+    .section img{
+        margin: 15px 0px 0px;
+    }
+}
