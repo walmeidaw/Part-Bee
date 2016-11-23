@@ -1,11 +1,12 @@
-.galery-list a:hover{
+.galery-list a:hover {
     text-decoration: none;
 }
+
 .galery-list .galery-item {
-    margin-bottom: 30px;
-    border: 1px solid transparent;
-    color: inherit;
     display: block;
+    margin-bottom: 30px;
+    color: inherit;
+    border: 1px solid transparent;
 }
 
 .galery-list .galery-item .item-image {
@@ -13,27 +14,27 @@
 }
 
 .galery-list .galery-item .item-image img {
-    max-width: 100%;
     min-width: 100%;
+    max-width: 100%;
 }
 
 .galery-list .galery-item .item-title {
+    font-size: 24px;
     font-weight: 300;
+    line-height: 30px;
+    overflow: hidden;
+    height: 60px;
     margin: 15px 0 15px;
     padding: 0;
-    font-size: 24px;
-    line-height: 30px;
-    height: 60px;
-    overflow: hidden;
 }
 
 .galery-list .galery-item .item-resume {
-    margin: 15px 0 15px;
-    padding: 0;
     font-size: 16px;
     line-height: 20px;
-    height: 60px;
     overflow: hidden;
+    height: 60px;
+    margin: 15px 0 15px;
+    padding: 0;
 }
 
 .galery-list .galery-item.border {
@@ -60,9 +61,9 @@
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
     vertical-align: middle;
+    opacity: .5;
     color: #fff;
     text-shadow: 0 0 2px #0d0d0d;
-    opacity: 0.5;
 }
 
 .video-holder:before {
@@ -73,12 +74,11 @@
     content: '';
 }
 
-.galery-list .galery-item:hover .video-holder:before,
-.galery-list .galery-item:hover .image-holder:before{
+.galery-list .galery-item:hover .video-holder:before, .galery-list .galery-item:hover .image-holder:before {
     opacity: 1;
 }
 
-.galery-list .galery-item.border:hover{
+.galery-list .galery-item.border:hover {
     border-color: #eee;
     background-color: #fbfbfb;
 }
@@ -93,12 +93,11 @@
 
 @media (max-width: 767px) {
     .galery-list .galery-item .item-title {
-        height: auto;
         overflow: auto;
+        height: auto;
     }
-
     .galery-list .galery-item .item-resume {
-        height: auto;
         overflow: auto;
+        height: auto;
     }
 }
