@@ -6,7 +6,7 @@
 
         <base href="../" target="_blank">
 
-        <title>Part Bee - Navegação</title>
+        <title>Part Bee Framework</title>
 
         <!-- jQuery -->
         <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
@@ -36,39 +36,37 @@
 
         <!-- projeto -->
         <link rel="stylesheet" href="content/styles/default.css" />
-        <link rel="stylesheet" href="content/styles/default-navigation.css" />
-
-        <style media="screen">
-            #crp{
-                font-family: crp;
-                transform: translateY(8px);
-                font-size: 30px;
-                height: 30px;
-                line-height: 30px;
-            }
-        </style>
+        <link rel="stylesheet" href="content/styles/default-header.css" />
     </head>
     <body id="shower">
         <div class="insider">
-
-                <nav class="navigation navbar-collapse collapse" aria-expanded="false" style="height: 0px;" id="navigation-menu">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-menu" aria-expanded="false">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
-                <a href="#" class="item home"><i class="fa fa-home" aria-hidden="true"></i></a>
-                <a href="#" class="item">Link 1</a>
-                <a href="#" class="item">Link 2</a>
-                <span class="item">Link 3
-                    <ul class="sub-navigation">
-                        <li><a href="#">Sub link 1</a></li>
-                        <li><a href="#">Sub link 2</a></li>
-                        <li><a href="#">Sub link 3</a></li>
-                    </ul>
-                </span>
-                <a href="#" class="item">Link 4</a>
-                <a href="#" class="item">Link 5</a>
-                <a href="#" class="item">Link 6</a>
-            </nav>
+            <header id="header">
+                <div class="pre-header">
+                    <div class="container-fluid">
+                        <i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> Av. Juscelino Kubitscheck, 110 Sul - Plano Diretor Sul, Palmas - TO
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 no-padding">
+                        <h1 class="brand">
+                            <img src="content/images/logo.svg" alt="Placeholder">
+                        </h1>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 no-padding text-right">
+                        <div class="side">
+                            <div class="display-inline">
+                                Teste
+                            </div>
+                            <div class="display-inline">
+                                Teste
+                            </div>
+                            <div class="display-inline">
+                                Teste
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
         </div>
         <div id="develpedby">
             Desenvolvido por <a href="https://github.com/walmeidaw" title="@walmeidaw">Willian Almeida Rodrigues</a>, 2016 &copy;
