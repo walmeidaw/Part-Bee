@@ -1,25 +1,33 @@
 .navigation{
+    display: block;
+
     margin: 0px;
     padding: 0px;
-    display: block;
+
     list-style: none;
+
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
 .navigation .item{
+    position: relative;
+
     display: inline-block;
+
     margin: 0px;
     padding: 13px 30px;
-    position: relative;
 }
 .navigation .item.home{
     padding: 0px 10px;
-    font-size: 24px;
+
     transform: translateY(2px);
+
+    font-size: 24px;
 }
 
 .navigation .item:hover{
     text-decoration: none;
+
     background-color:  #eee;
 }
 
@@ -30,23 +38,25 @@
 .navigation .item:active,
 .navigation .item.active{
     text-decoration: none;
-    background-color:  #23527c;
-    color: white;
     text-decoration: none;
+
+    color: white;
+    background-color:  #23527c;
 }
 
 .navigation .item.home:hover,
 .navigation .item.home:active,
 .navigation .item.home.active{
-    background: none;
     color: currentColor;
+    background: none;
 }
 
 .navigation .item:active,
 .navigation .item.active{
     text-decoration: none;
-    background-color:  #23527c;
+
     color: white;
+    background-color:  #23527c;
 }
 .navigation .item:hover .sub-navigation,
 .navigation .item:active .sub-navigation,
@@ -54,27 +64,34 @@
     display: block;
 }
 .navigation .item .sub-navigation{
-    display: none;
     position: absolute;
-    float: left;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    left: 0px;
     top: 100%;
+    left: 0px;
+
+    display: none;
+    float: left;
+
     width: auto;
-    background: #eee;
+    margin: 0px;
+    padding: 0px;
+
+    list-style: none;
+
     border: solid 1px #ddd;
+    background: #eee;
 }
 .navigation .item .sub-navigation li a{
-    padding: 7px 15px;
     display: block;
+
+    padding: 7px 15px;
+
     white-space: nowrap;
 }
 
 .navigation .item .sub-navigation li a:hover{
-    background: white;
     text-decoration: none;
+
+    background: white;
 }
 
 @media (min-width: 1960px) {
@@ -94,30 +111,37 @@
     }
     .navigation .item.home{
         display: block;
+
         padding: 10px 15px;
     }
     .navigation .item{
         display: block;
+
         padding: 10px 15px;
     }
     .navigation .item .sub-navigation{
         position: static;
+
         float: none;
 
         margin: 10px 0;
+
         border: none;
         background: transparent;
     }
     .navigation .navbar-toggle{
         position: absolute;
-        right: 0px;
-        float: none;
-        background: #23527c;
-        color: #fff;
         z-index: 99;
+        right: 0px;
+
+        float: none;
+
+        color: #fff;
+        background: #23527c;
     }
     .navbar-collapse {
-        min-height: 58px;
         overflow: hidden;
+
+        min-height: 58px;
     }
 }

@@ -2,10 +2,12 @@
 
 }
 #header .pre-header{
-    border-bottom: 1px solid #eee;
-    line-height: 30px;
-    font-size: 12px;
     text-align: right;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 12px;
+    line-height: 30px;
 }
 #header .brand{
     margin: 0px;
@@ -17,6 +19,7 @@
 
 #header .display-inline{
     display: inline-block;
+
     margin-right:15px;
     margin-left:15px;
     padding: 15px 0px;
@@ -32,15 +35,18 @@
 }
 @media (max-width: 767px) {
     #header .pre-header{
-        font-size: 9px;
         text-align: center;
+
+        font-size: 9px;
     }
     #header .side{
         padding: 5px 0px;
     }
     #header .display-inline{
         display: block;
-        text-align: center;
+
         padding: 5px 0px;
+
+        text-align: center;
     }
 }

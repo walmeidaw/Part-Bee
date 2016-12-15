@@ -1,21 +1,23 @@
 .banner-featured .item .holder {
     position: relative;
-    height: 400px;
-    width: 100%;
+
     display: block;
     overflow: hidden;
+
+    width: 100%;
+    height: 400px;
 }
 
 .banner-featured .item .holder img {
-    display: block;
-    max-width: none;
-    height: 100%;
-    width: auto;
-
     position: absolute;
-
     top: 50%;
     left: 50%;
+
+    display: block;
+
+    width: auto;
+    max-width: none;
+    height: 100%;
 
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -25,44 +27,52 @@
 }
 
 .banner-featured .item .caption {
-    font-size: 20px;
-    line-height: 1;
     position: absolute;
-    display: block;
-    overflow: hidden;
-    height: 100px;
-    padding: 20px;
-    font-weight: 300;
-    color: #fff;
-    background-color: rgba(0, 0, 0, .5);
-
     top: 70%;
     left: 50%;
+
+    display: block;
+    overflow: hidden;
+
+    height: 100px;
+    padding: 20px;
 
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
 }
 
 .owl-carousel .owl-nav div {
-    font-size: 0;
     position: absolute;
     top: 0;
+
     display: block;
+
     width: 50px;
     height: 100%;
+
     -webkit-transition: background 1000ms linear;
     -moz-transition: background 1000ms linear;
     -ms-transition: background 1000ms linear;
     -o-transition: background 1000ms linear;
     transition: background 1000ms linear;
+
     color: transparent;
     background-color: rgba(255, 255, 255, .2);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% auto;
+
+    font-size: 0;
 }
 
 .owl-carousel .owl-nav div:hover {
@@ -71,38 +81,45 @@
 
 .owl-carousel .owl-prev {
     left: 0;
+
     background-image: url(../images/triangle-left.svg);
 }
 
 .owl-carousel .owl-next {
     right: 0;
+
     background-image: url(../images/triangle-right.svg);
 }
 
 .owl-carousel .owl-dots {
     position: absolute;
     bottom: 0;
+
     width: 100%;
+
     text-align: center;
 }
 
 .owl-carousel .owl-dots .owl-dot {
     display: inline-block;
+
     margin: 3px;
 }
 
 .owl-carousel .owl-dots .owl-dot span {
     display: block;
+
     width: 14px;
     height: 14px;
+
+    border: 1px solid #fff;
     border-radius: 14px;
     background: transparent;
-    border: 1px solid #fff;
 }
 
 .owl-carousel .owl-dots .owl-dot.active span {
-    background: #fff;
     border: 1px solid transparent;
+    background: #fff;
 }
 
 @media (min-width: 1960px) {}
@@ -116,7 +133,9 @@
 @media (max-width: 767px) {
     .banner-featured .item .caption {
         position: static;
+
         display: block;
+
         -webkit-transform: none;
         -moz-transform: none;
         -ms-transform: none;
