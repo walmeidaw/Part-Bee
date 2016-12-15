@@ -268,3 +268,56 @@
 .social-link-list.inverse .social-item.item-label:hover{
     background-color: #aaaaaa;
 }
+/* INTRO */
+#intro{
+    padding:30px 0px;
+}
+
+/* CARD */
+.my-card{
+    position: relative;
+}
+.my-card .photo{
+    text-align: center;
+}
+.my-card .photo img{
+    border-radius: 100%;
+    max-width: 100%;
+    padding: 15px;
+}
+.my-card .content{
+    display: none;
+    position: absolute;
+    padding-left: 100%;
+    margin: 15px 30px;
+    width: 350%;
+    opacity: 0;
+}
+.my-card .content .holder{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: solid 1px #e2e2e2;
+    border-radius: 8px;
+    z-index: -1;
+    padding: 15px;
+    margin: -15px;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+.my-card:hover .content{
+    display: block;
+    opacity: 1;
+}
+.my-card .content p{
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: 0.1em;
+}
