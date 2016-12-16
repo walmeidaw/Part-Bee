@@ -1,46 +1,58 @@
 #footer .header-title{
+    display: block;
+
+    margin: 0px;
     padding: 120px 0px 15px;
+
     font-size: 20px;
     line-height: 1;
-    margin: 0px;
-    display: block;
 }
 #footer .header-brand{
-    height: 155px;
     display: table-cell;
     overflow: hidden;
+
     width: auto;
-    line-height: 1;
+    height: 155px;
     padding: 40px 0px 15px;
+
     vertical-align: bottom;
+
+    line-height: 1;
 }
 #footer .header-brand img{
-    vertical-align: bottom;
     display: table-cell;
+
     max-height: 100px;
+
+    vertical-align: bottom;
 }
 #footer .item-link{
-    line-height: 15px;
     padding: 10px 15px 5px;
+
+    line-height: 15px;
 }
 #footer .item-link:hover{
     background-color: #fffcfc;
 }
 #powered-footer{
-    font-size: 11px;
     display: block;
-    line-height: 20px;
+
+    padding: 15px 0px;
 
     background: #eee;
-    padding: 15px 0px;
+
+    font-size: 11px;
+    line-height: 20px;
 }
 #powered-footer .devby{
     text-align: right;
 }
 #powered-footer a.icon{
-    font-size: 20px;
     float: right;
+
     margin: 0px 5px;
+
+    font-size: 20px;
 }
 #powered-footer a.icon:hover,
 #powered-footer a.icon:focus,
@@ -58,18 +70,22 @@
 
 @media (max-width: 767px) {
     #footer .header-title{
-        padding: 30px 0px 15px;
         display: block;
+
+        padding: 30px 0px 15px;
     }
     #footer .header-brand{
-        height: auto;
         display: block;
         overflow: auto;
-        line-height: 1;
+
+        height: auto;
         padding: 30px 0px 15px;
+
+        line-height: 1;
     }
     #footer .header-brand img{
         display: block;
+
         max-height: 100px;
     }
     #powered-footer{
@@ -77,10 +93,11 @@
     }
     #powered-footer .devby{
         margin-top: 10px;
+
         text-align: center;
     }
     #powered-footer a.icon{
-        float: none;
         display: block;
+        float: none;
     }
 }

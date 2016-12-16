@@ -9,10 +9,11 @@
 }
 
 .content-model .content-header .content-title {
-    font-size: 250%;
-    font-weight: 600;
     margin: 20px 0px 15px;
     padding: 0px;
+
+    font-size: 250%;
+    font-weight: 600;
 }
 
 .content-model .content-header .content-resume {
@@ -33,8 +34,10 @@
 
 .content-model .content-body p {
     margin: 20px 0px;
-    line-height: 1.7;
+
     letter-spacing: 0.5px;
+
+    line-height: 1.7;
 }
 
 .content-model .content-footer {

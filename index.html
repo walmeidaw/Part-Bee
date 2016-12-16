@@ -1,84 +1,234 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-        <title>Part Bee Framework</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <title>PartBee Framework</title>
 
-        <!-- jQuery -->
-        <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
 
-        <!--bootstrap -->
-        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
-        <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--bootstrap -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-        <!-- Animate CSS -->
-        <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
 
-        <!--Noty -->
-        <script type="text/javascript" src="Vendor/noty/jquery.noty.js"></script>
+    <!--Noty -->
+    <script type="text/javascript" src="Vendor/noty/jquery.noty.js"></script>
 
-        <!-- owl-carousel -->
-        <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.css" />
-        <script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.css" />
+    <script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
 
-        <!-- font-awesome  -->
-        <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
 
-        <!-- Slidefy -->
-        <link rel="stylesheet" href="vendor/slidefy/slidefy.css" />
-        <script type="text/javascript" src="vendor/slidefy/slidefy.js"></script>
+    <!-- Slidefy -->
+    <link rel="stylesheet" href="vendor/slidefy/slidefy.css" />
+    <script type="text/javascript" src="vendor/slidefy/slidefy.js"></script>
 
-        <!-- Part Bee  -->
-        <link rel="stylesheet" href="vendor/pbee/styles.css" />
-        <link rel="stylesheet" href="vendor/pbee/debug-style.css" />
-        <script type="text/javascript" src="vendor/pbee/debug-style.js"></script>
+    <!-- Part Bee  -->
+    <link rel="stylesheet" href="vendor/pbee/styles.css" />
+    <link rel="stylesheet" href="vendor/pbee/debug-style.css" />
+    <script type="text/javascript" src="vendor/pbee/debug-style.js"></script>
 
-        <!-- projeto -->
-        <link rel="stylesheet" href="content/styles/default.css" />
-        <link rel="stylesheet" href="content/styles/default-structure.css" />
-        <link rel="stylesheet" href="content/styles/media.css" />
-    </head>
+    <!-- projeto -->
+    <link rel="stylesheet" href="content/styles/default.css" />
 
-<body id="shower">
-    <div class="insider">
-        <center class="container-fluid">
-            <h1>Part Bee Pieces</h1>
-            <div class="col-xs-12 col-sm-4">
-                <h2>Template</h2>
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="parts/header.html">Header</a></li>
-                    <li class="list-group-item"><a href="parts/nav.html">Navigation</a></li>
-                    <li class="list-group-item"><a href="parts/banner.html">Featured Banner</a></li>
-                    <li class="list-group-item"><a href="parts/section.html">Sections</a></li>
-                    <li class="list-group-item"><a href="parts/footer.html">Footer</a></li>
-                </ul>
+
+    <link rel="stylesheet" href="content/styles/default-social-icons.css" />
+
+
+    <link rel="stylesheet" href="content/styles/default-structure.css" />
+    <link rel="stylesheet" href="content/styles/media.css" />
+
+    <link rel="stylesheet" href="demo/style.css" />
+    <link rel="stylesheet" href="demo/style-media.css" />
+</head>
+
+<body>
+    <div id="page-content">
+        <!-- HEADER -->
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="partbee">
+                            <div id="brand-partbee">
+                                <img src="demo/logo.svg" alt="" id="logo-partbee">
+                                <div id="name-partbee">part<b>bee</b></div>
+                            </div>
+                        </div>
+                        <div class="link-commom">
+                            by @<a href="https://twitter.com/walmeidaw">walmeidaw</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4">
+                        <a href="demo/index.html" class="btn btn-default btn-block">DEMO</a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <a href="https://github.com/walmeidaw/Part-Bee" class="btn btn-link btn-block">
+                            <i class="fa fa-arrow-down"></i> I WANNA
+                            <b class="water">VERSION BETA 1</b>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-4">
-                <h2>Helpers</h2>
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="parts/social-icons.html">Social Icons</a></li>
-                    <li class="list-group-item"><a href="parts/content-list.html">Content List</a></li>
-                    <li class="list-group-item"><a href="parts/galery-description-list.html">Figure Description List</a></li>
-                    <li class="list-group-item"><a href="parts/content-model.html">Content Model</a></li>
-                    <li class="list-group-item"><a href="parts/galery.html">Galery</a></li>
-                    <li class="list-group-item"><a href="parts/login.html">Login</a></li>
-                </ul>
+        </div>
+        <!-- INTRO -->
+        <div id="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+                        <section class="section" id="text-intro">
+                            <header class="header">
+                                <h2>Hey <b>You</b>!</h2>
+                            </header>
+                            <div class="section-body">
+                                <p>I work with design since 2009 when I started the college. I can create PSD templates I can code the front end of them and I can code the back end too. But since I never made the portifolio. Maybe cause I'm usually focused
+                                    on finish the current project to start the next one. So I forget to save pictures and informations about works to build them as my portifolio.</p>
+                                <p>I'm here 7 years after to make something like this. Like a portifolio. But different. I'm good to follow patterns I swear! But I'm a designer and I have a taste for the new. So, to show my job I started the <b>PartBee</b>                                    as a responsive reusable HTML components. I build independent parts HTML using frameworks for web pages.</p>
+                                <p>More that show Templates PSD or HTML pages. I will give my intimity as front-end showing and sharing my code that helps to build pages faster.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-lg-6 col-md-offset-0 col-lg-offset-2">
+                        <div class="my-card">
+                            <div class="row">
+                                <div class="photo col-xs-12 col-sm-3">
+                                    <img src="demo/photo.jpg" alt="">
+                                </div>
+                                <div class="content col-xs-12 col-sm-9">
+                                    <p>Hey! I used to be a mermaidunicorn. Now I'm just a human. I'm master degree in Computer Science. Actualy 25 years old and living in Palmas-TO, Brazil. More than 4 (and 3 more) years of profissional experience as front
+                                        end. I have feelings for HTML, CSS and JS ♥</p>
+                                    Send me a message and let me know you too!
+                                    <div class="social-link-list fill circle">
+                                        <a href="https://www.facebook.com/walmeidaw" class="social-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://twitter.com/walmeidaw" class="social-item"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="https://www.instagram.com/walmeidaw/" class="social-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="https://www.linkedin.com/in/walmeidaw" class="social-item"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        <a class="social-item item-label" href="https://twitter.com/intent/tweet?text=Hey%20@walmeidaw!%20:D&hashtags=PartBee" target="_blank">
+                                            <span class="text">Say “hey” on Twitter</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-2">
+                        <div id="powered">
+                            <div class="water uppercase">
+                                built With:<br />
+                                <b>bootstrap</b> v3.3.7<br />
+                                <b>Jquery</b> v3.1.1<br />
+                                <b>font awesome</b> v4.7<br />
+                                <b>Owl Carousel</b> 2<br /> and more
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-4">
-                <h2>Plugins</h2>
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="parts/slidefy.html">Slidefy</a></li>
-                </ul>
+        </div>
+        <!-- COMPONENTS -->
+        <div id="components">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <section class="section">
+                            <header class="header">
+                                <h3><b>PartBee</b> Components</h3>
+                            </header>
+                            <div class="row section-body">
+                                <div class="col-xs-12">
+                                    <p class="mini"><b>PartBee</b> is composed by 3 groups of components: <i>Layout Components</i>, <i>Responsive Structures</i> and <i>Plugins</i>.</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <h4><b>Layout</b> Components</h4>
+                                    <img src="demo/C1.gif" alt="">
+                                    <p class="mini">Those that help a build base components of layout like header, navigation menu, sections, featured banner and footer</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <h4>Responsive <b>Structures</b></h4>
+                                    <img src="demo/C2.gif" alt="">
+                                    <p class="mini">These are useful components. They are more a big structure to make your job easier.</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <h4><b>Plugins</b></h4>
+                                    <img src="demo/C3.gif" alt="">
+                                    <p class="mini">These are plugins that I created to attend something.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
-        </center>
+        </div>
+        <!-- USING IT -->
+        <div id="using">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <section class="section">
+                            <header class="header">
+                                <h3>Using it</h3>
+                            </header>
+                            <div class="row section-body">
+                                <div class="col-xs-12">
+                                    <p class="mini"><b>Partbee</b> is totally fractionated. Every component has your own CSS file and dependencies. The common frameworks (Bootstrap, jQuery, font Awesome and others) are the same references in <code>vendor</code> folder. In the <code>default-structure.css</code> file you can customize base
+                                        components following your layout.</p>
+                                    <p class="mini">To use a component add css file for that component on html document.</p>
+                                    <code class="block">
+                                        &lt;link rel="stylesheet" href="content/styles/default-component-name.css" /&gt;
+                                    </code>
+                                    <p class="mini">Use the template named by the name of component in the part folder as sample. It’s importante keep the mainly structure for the component, your style is totaly dependent of this.</p>
+                                    <code class="block">
+                                        &lt;!-- PARTBEE --&gt; <br />
+                                        &lt;center&gt;<br />
+                                        	&lt;i&gt;Part Bee&lt;/i&gt;<br />
+                                        &lt;/center&gt;
+                                    </code>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="develpedby">
-        Desenvolvido por <a href="https://github.com/walmeidaw" title="@walmeidaw">Willian Almeida Rodrigues</a>, 2016 &copy;
-    </div>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-md-push-6">
+                    <a class="btn btn-default" href="#" id="hireme">Hire me</a>
+                    <div class="social-link-list fill circle inverse">
+                        <a href="https://www.facebook.com/walmeidaw" class="social-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/walmeidaw" class="social-item"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/walmeidaw/" class="social-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/walmeidaw" class="social-item"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a class="social-item item-label" href="https://twitter.com/intent/tweet?text=Hey%20@walmeidaw!%20:D&hashtags=PartBee" target="_blank">
+                            <span class="text">Say “hey” on Twitter</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-md-pull-6">
+                    <div class="powered-footer">
+                        Coded with no coffee and lot love by @<a href="https://twitter.com/walmeidaw">walmeidaw</a>.
+                        <div class="clearfix visible-xs"></div>
+                        <span class="water">
+                                (Please, be kind with my css.)
+                                <i class="fa fa-heart"></i>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
