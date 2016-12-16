@@ -43,6 +43,11 @@
         line-height: 40px;
         font-size: 14px;
     }
+
+    /* SECTION */
+    .section h4{
+        height: 48px;
+    }
 }
 
 /* Se for bem pequeno */
@@ -99,6 +104,12 @@
     }
     /* SOCIAL ICONS */
     .social-link-list {
+        text-align: center;
+    }
+    /* CARD ME */
+
+    .my-card .content {
+        margin: 15px 0px;
         text-align: center;
     }
 }
