@@ -1,0 +1,159 @@
+$width: 70px;
+$columns: 12;
+$gutter: 30px;
+
+$settings: (
+    maxWidth: ($width * $columns) + ($columns - 1) * $gutter,
+    columns: $columns,
+    margin: $gutter/2,
+    breakpoints: (
+        xs: (
+            label: "Mobile",
+            mediaQuery: "",
+            maxQuery: "(max-width: 480px)"
+        ),
+        sm: (
+            label: "Mobile Landing",
+            mediaQuery: "(min-width: 481px)",
+            maxQuery: "(min-width: 481px) and (max-width: 768px)"
+        ),
+        md: (
+            label: "Tablet",
+            mediaQuery: "(min-width: 769px)",
+            maxQuery: "(min-width: 769px) and (max-width: 1024px)"
+        ),
+        lg: (
+            label: "PC",
+            mediaQuery: "(min-width: 1025px)",
+            maxQuery: "(min-width: 1025px) and (max-width: 1200px)"
+        ),
+        xl: (
+            label: "Big resolutions",
+            mediaQuery: "(min-width: 1201px)",
+            maxQuery: "(min-width: 1201px)"
+        ),
+    )
+);
+
+@mixin renderGridStyles($settings) {
+    $breakpoints: map-get($settings, "breakpoints");
+    @each $key, $breakpoint in $breakpoints {
+         @if $key == xs{
+            @include renderGrid($key, $settings);
+        }
+        @else {
+             @include media(map-get($breakpoint, "mediaQuery")){
+                @include renderGrid($key, $settings);
+            }
+        }
+        @include renderDebugResponsive($key, $breakpoint);
+    }
+}
+@mixin renderGrid($key, $settings) {
+    $i: 1;
+    @while $i <= map-get($settings, "columns") {
+        .col-#{$key}-#{$i} {
+            width: 100% * $i / map-get($settings,"columns");
+            @extend %col-settings;
+        }
+        $i: $i+1;
+    }
+}
+@mixin renderDebugResponsive($key, $breakpoint) {
+    @include media(map-get($breakpoint, "maxQuery")) {
+        body.debug {
+            &:before {
+                content: "#{$key}";
+            }
+            &:after {
+                content: map-get($breakpoint, "label");
+            }
+        }
+    };
+}
+
+@include media(screen) {
+    %col-settings {
+        float: left;
+        padding-right: map-get($settings, "margin");
+        padding-left: map-get($settings, "margin");
+        position: relative;
+        min-height: 1px;
+
+        .debug & {
+            @extend %debug;
+        }
+    }
+
+    %debug {
+        padding-right: 0;
+        border-right: map-get($settings, "margin") solid rgba(0, 186, 255, 0.05);
+        padding-left: 0;
+        border-left: map-get($settings, "margin") solid rgba(0, 186, 255, 0.05);
+        background-color: rgba(235, 0, 255, 0.02);
+    }
+}
+
+%clearfix {
+    &:after {
+        clear: both;
+    }
+
+    &:after,
+    &:before {
+        display: table;
+        content: "";
+    }
+}
+
+%debug-labels {
+    position: fixed;
+    content: "";
+    top: 5px;
+    left: 5px;
+    font: $font_debug;
+    line-height: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+* {
+    @include box-sizing(border-box);
+}
+
+.container {
+    max-width: map-get($settings, "maxWidth");
+    padding-right: map-get($settings, "margin");
+    padding-left: map-get($settings, "margin");
+    margin-right: auto;
+    margin-left: auto;
+    @extend %clearfix;
+}
+
+.row {
+    margin-right: map-get($settings, "margin") * -1;
+    margin-left: map-get($settings, "margin") * -1;
+    @extend %clearfix;
+}
+@include renderGridStyles($settings);
+
+body.debug {
+    &:before {
+        @extend %debug-labels;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        display: block;
+        border-radius: 2px;
+        background-color: $color_primary;
+        color: $color_text_contrast;
+        mix-blend-mode: multiply;
+    }
+
+    &:after {
+        @extend %debug-labels;
+        color: $color_primary;
+        left: 35px;
+        mix-blend-mode: multiply;
+    }
+}

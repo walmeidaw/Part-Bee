@@ -1,0 +1,83 @@
+$menu_height: 50px;
+
+nav[role="menu"] {
+    @include margin-height($md);
+
+    a {
+        position: relative;
+        display: inline-block;
+        height: $menu_height;
+        padding: 0 $pd;
+        color: $color_text_default;
+        background: transparent;
+        font-weight: 400;
+        line-height: $menu_height;
+
+        &:after {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            width: 80%;
+            height: 3px;
+            content: "";
+            background-color: transparent;
+            @include translate(-50%, 0);
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            &:after {
+                background-color: $color_primary;
+            }
+        }
+
+        &.active,
+        &:active {
+            text-decoration: none;
+
+            &:after {
+                background-color: darken($color_primary, 10%);
+            }
+        }
+
+        &:focus {
+            text-decoration: none;
+            color: $color_text_default !important;
+            background-color: transparent !important;
+
+            &:after {
+                background-color: $color_ascent;
+            }
+        }
+    }
+}
+
+
+nav[role="list"] {
+    a{
+        display: inline-block;
+        width: 100%;
+        margin: 0px;
+        padding: 3px 0px;
+        color: $color_text_default;
+
+        &:hover{
+            color: $color_primary;
+            text-decoration: underline;
+        }
+        &:active,
+        &:focus{
+            color: darken($color_primary, 10%) !important;
+            background-color: transparent !important;
+            text-decoration: underline;
+        }
+    }
+
+    &.half-item{
+        a{
+            width: 49%;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@mixin padding-height($value) {
+      padding-top: $value;
+      padding-bottom: $value;
+}
+
+@mixin margin-height($value) {
+      margin-top: $value;
+      margin-bottom: $value;
+}
+
+@mixin translate($valueX, $valueY) {
+    -moz-transform: translateX($valueX) translateY($valueY);
+    -webkit-transform: translateX($valueX) translateY($valueY);
+    -o-transform: translateX($valueX) translateY($valueY);
+    -ms-transform: translateX($valueX) translateY($valueY);
+    transform: translateX($valueX) translateY($valueY);
+}
+
+@mixin box-sizing($value) {
+    -webkit-box-sizing: $value;
+    -moz-box-sizing: $value;
+    box-sizing: $value;
+}
+
+@mixin media($queryString) {
+     @media #{$queryString}{
+        @content;
+    }
+}

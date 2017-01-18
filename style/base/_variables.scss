@@ -1,0 +1,24 @@
+// Background Settings
+$background: #ffffff; // Background
+$background_secondary: #eeeeee; // A alternative Background
+
+// Colors Settings
+$color_primary: #a200ff; // Main color
+$color_ascent: #73b500; // A contrast color
+$color_fade_light: #dddddd; // For disabled and discreet things
+$color_fade_dark: #bbbbbb; // For disabled and discreet text
+$color_text_default: #362e2e; // Text default
+$color_text_contrast: #ffffff; // Text in contrast (in case of backgrounds inverted)
+
+// Fonts Settings
+$font_default: 300 16px/20px "Raleway", sans-serif; // Default font settings for document
+$font_title: 400 20px "Open Sans", sans-serif; // Default font settings for headers elements
+$font_text: 300 16px/20px "Open Sans", sans-serif; // Default font settings for commom text in documents (<p> elements in <article> tags)
+$font_debug: 300 16px/1 "Open Sans Condensed", sans-serif;
+
+// Misc Settings
+$md: 15px; // Margin Default Value
+$pd: 15px; // Padding Default Value
+
+// Import fonts from Google Fonts
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900|Open+Sans+Condensed:300,700');

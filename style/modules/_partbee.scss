@@ -1,0 +1,14 @@
+$align_list: left right center justify;
+$selector: ();
+
+@each $item in $align_list{
+    .text-align-#{$item}{
+        text-align: $item;
+    }
+}
+
+#powered{
+    @extend %themed;
+    @include padding-height($pd);
+    font-size: 12px;
+}

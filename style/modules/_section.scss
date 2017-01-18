@@ -1,0 +1,105 @@
+// Section Part Bee Style
+%themed{
+    &.alpha {
+        background-color: $color_primary;
+        @extend %contrast;
+    }
+
+    &.beta {
+        background-color: darken($color_primary, 20%);
+        @extend %contrast;
+    }
+
+    &.gama {
+        background-color: $color_ascent;
+        @extend %contrast;
+    }
+
+    &.tetha {
+        background-color: darken($color_ascent, 20%);
+        @extend %contrast;
+    }
+
+    &.omega {
+        background-color: #f4f4f4;
+    }
+}
+
+.section {
+    display: block;
+    @include padding-height($pd*2);
+    @extend %themed;
+
+    .header {
+        text-align: center;
+
+        h1,h2,h3,h4,h5,h6 {
+            color: $color_text_default;
+            font-weight: 300;
+
+            small {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .caption {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        font-weight: 300;
+
+        p {
+            font-weight: 300;
+        }
+    }
+}
+// Contrast Clas Settings
+
+%contrast {
+    color: $color_text_contrast;
+
+    p {
+        color: $color_text_contrast;
+    }
+
+    a {
+        text-decoration: underline;
+        color: $color_text_contrast;
+        &:hover {
+            text-decoration: none;
+            color: $color_text_contrast;
+        }
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        color: $color_text_contrast;
+        font-weight: 300;
+        small {
+            color: $color_text_contrast;
+            font-weight: 600;
+        }
+    }
+
+    hr.gama {
+        background-color: $color_text_contrast;
+    }
+}
+// Footer section
+
+.footer {
+    @extend .section;
+    .header {
+        text-align: left;
+        h1,h2,h3,h4,h5,h6 {
+            text-transform: none;
+            font-size: 20px;
+            font-weight: 300;
+
+            b {
+                font-weight: 700;
+            }
+        }
+    }
+}
