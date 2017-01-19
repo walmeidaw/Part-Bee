@@ -1,17 +1,28 @@
 $menu_height: 50px;
 
 nav[role="menu"] {
-    @include margin-height($md);
+    @include padding-height($md);
+
+    @include mediaBySize(xs){
+        border:1px solid lighten($color_primary, 40%);
+        border-radius: 4px;
+    }
 
     a {
         position: relative;
         display: inline-block;
         height: $menu_height;
-        padding: 0 $pd;
+        margin: 0 $pd;
         color: $color_text_default;
         background: transparent;
         font-weight: 400;
         line-height: $menu_height;
+
+        @include mediaBySize(xs){
+            display: block;
+            text-align: center;
+            border-radius: 4px;
+        }
 
         &:after {
             position: absolute;
@@ -28,8 +39,16 @@ nav[role="menu"] {
         &:hover {
             text-decoration: none;
 
+            @include mediaBySize(xs){
+                background-color: lighten($color_primary, 45%);
+            }
+
             &:after {
                 background-color: $color_primary;
+
+                @include mediaBySize(xs){
+                    background-color: transparent;
+                }
             }
         }
 
@@ -37,8 +56,17 @@ nav[role="menu"] {
         &:active {
             text-decoration: none;
 
+            @include mediaBySize(xs){
+                background-color: darken($color_primary, 10%);
+                color: $color_text_contrast;
+            }
+
             &:after {
                 background-color: darken($color_primary, 10%);
+
+                @include mediaBySize(xs){
+                    background-color: transparent;
+                }
             }
         }
 
@@ -47,8 +75,16 @@ nav[role="menu"] {
             color: $color_text_default !important;
             background-color: transparent !important;
 
+            @include mediaBySize(xs){
+                background-color: lighten($color_primary, 45%) !important;
+            }
+
             &:after {
                 background-color: $color_ascent;
+
+                @include mediaBySize(xs){
+                    background-color: transparent;
+                }
             }
         }
     }

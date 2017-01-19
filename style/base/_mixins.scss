@@ -16,6 +16,14 @@
     transform: translateX($valueX) translateY($valueY);
 }
 
+@mixin transition($time) {
+    -webkit-transition: all $time ease;
+    -moz-transition: all $time ease;
+    -ms-transition: all $time ease;
+    -o-transition: all $time ease;
+    transition: all $time ease;
+}
+
 @mixin box-sizing($value) {
     -webkit-box-sizing: $value;
     -moz-box-sizing: $value;
@@ -24,6 +32,21 @@
 
 @mixin media($queryString) {
      @media #{$queryString}{
+        @content;
+    }
+}
+
+// NEEDED GRID FRAMEWORK
+@mixin mediaBySize($size) {
+    $media_data: map-get($breakpoints, $size);
+    @include media(map-get($media_data, "rangeQuery")){
+        @content;
+    }
+}
+
+//No bootstrap filter
+@mixin noBootstrapStatus($value){
+    @if $ignoreBootstrap == $value{
         @content;
     }
 }

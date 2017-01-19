@@ -1,114 +1,66 @@
-.btn {
-    padding: 8px 12px;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 2px;
-
-    &.btn-default{
-        border-color: $color_primary;
-        color: $color_primary;
-
-        &:hover {
-            color: $color_text_contrast;
-            background-color: $color_primary;
-        }
-
-        &.active, &:active, &:focus{
-            color: $color_text_contrast;
-            background-color: darken($color_primary,10%);
-        }
-    }
-
-    &.btn-alpha{
-        color: #fff;
-        background-color: $color_primary;
-
-        &:hover {
-            color: #fff;
-            background-color: darken($color_primary, 10%);
-            border-color: darken($color_primary, 20%);
-        }
-
-        &.active, &:active, &:focus{
-            color: #fff;
-            background-color: darken($color_primary, 20%);
-        }
-    }
-
-    &.btn-beta{
-        color: #fff;
-        background-color: $color_ascent;
-
-        &:hover {
-            color: #fff;
-            background-color: darken($color_ascent, 10%);
-        }
-
-        &.active, &:active, &:focus{
-            color: #fff;
-            background-color: darken($color_ascent, 20%);
-        }
-    }
-}
-
-.form-control {
-    height: 40px;
-    padding: 9px 12px;
-    color: $color_text_default;
-    border: 1px solid $color_fade_dark;
-    border-radius: 2px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    font: $font_text;
-    font-weight: 400;
-    font-size: 14px;
-}
-
-.form-horizontal {
-    .control-label {
-        padding-top: 12px;
+@include noBootstrapStatus(false){
+    .form-control {
+        height: 40px;
+        padding: 9px 12px;
+        color: $color_text_default;
+        border: 1px solid $color_soft;
+        border-radius: 2px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font: $font_text;
         font-weight: 400;
+        font-size: 14px;
     }
-}
 
-.pagination{
-    font: $font_text;
-
-    &>li{
-        &>a, &>span{
-            color: $color_primary;
-            margin: 0px 2px;
-            border-radius: 2px !important;
-            border-color: lighten($color_fade_light, 10%);
-
-            &:hover,
-            &:focus{
-                color: $color_text_contrast;
-                background-color: $color_primary;
-                border-color: $color_primary;
-            }
+    .form-horizontal {
+        .control-label {
+            padding-top: 12px;
+            font-weight: 400;
         }
     }
 
-    &>.active{
-        &>a, &>span{
-            &,
-            &:hover,
-            &:focus{
-                background-color: darken($color_primary, 10%);
-                border-color: darken($color_primary, 20%);
+    .pagination{
+        font: $font_text;
+
+        &>li{
+            &>a, &>span{
+                color: $c_alpha;
+                margin: 0px 2px;
+                border-radius: 2px !important;
+                border-color: $color_soft;
+
+                @include transition(500ms);
+
+                &:hover,
+                &:focus{
+                    color: $color_text_contrast;
+                    background-color: $c_alpha;
+                    border-color: $c_alpha;
+                }
             }
         }
-    }
 
-    &>.disabled{
-        &>a, &>span{
-            &,
-            &:hover,
-            &:focus{
-                background-color: $color_fade_light;
-                border-color: $color_fade_light;
-                color: $color_fade_dark;
+        &>.active{
+            &>a, &>span{
+                &,
+                &:hover,
+                &:focus{
+                    background-color: $c_beta;
+                    border-color: darken($c_beta, 5%);
+                }
+            }
+        }
+
+        &>.disabled{
+            &>a, &>span{
+                &,
+                &:hover,
+                &:focus,
+                &:active{
+                    background-color: lighten($color_soft, 10%) !important;
+                    border-color: $color_soft !important;
+                    color: $color_soft !important;
+                }
             }
         }
     }

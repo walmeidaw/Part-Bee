@@ -1,14 +1,36 @@
-// Background Settings
-$background: #ffffff; // Background
-$background_secondary: #eeeeee; // A alternative Background
+@function color(){
+    $color: rgb(random(256)-1,random(256)-1,random(256)-1);
+    @if lightness($color) < 60%{
+        $color: lighten($color, 60% - lightness($color));
+    }
+    @return $color;
+}
+
+@function ascent($color){
+    $color: adjust-hue($color, 164);
+    //$color: saturate($color, 0);
+    $color: darken($color, 15);
+    @return $color;
+}
+
 
 // Colors Settings
-$color_primary: #a200ff; // Main color
-$color_ascent: #73b500; // A contrast color
-$color_fade_light: #dddddd; // For disabled and discreet things
-$color_fade_dark: #bbbbbb; // For disabled and discreet text
-$color_text_default: #362e2e; // Text default
+$color_primary: color(); // Main color DEFAULT #a200ff
+$color_ascent:  ascent($color_primary); // A contrast color DEFAULT #73b500
+$color_soft: #e0e0e0; // For disabled and discreet things
+$color_text_default: #2e2e36; // Text default
 $color_text_contrast: #ffffff; // Text in contrast (in case of backgrounds inverted)
+
+// Background Settings
+$background: #ffffff; // Background
+$background_secondary: #f4f4f4; // A alternative Background
+
+// Themed Colors
+$c_alpha: $color_primary;
+$c_beta: darken($color_primary, 15%);
+$c_gama: $color_ascent;
+$c_tetha: darken($color_ascent, 15%);
+$c_omega: $background_secondary;
 
 // Fonts Settings
 $font_default: 300 16px/20px "Raleway", sans-serif; // Default font settings for document
@@ -19,6 +41,12 @@ $font_debug: 300 16px/1 "Open Sans Condensed", sans-serif;
 // Misc Settings
 $md: 15px; // Margin Default Value
 $pd: 15px; // Padding Default Value
+
+// Grid System partBee
+$ignoreBootstrap: false;
+$width: 70px;
+$columns: 12;
+$gutter: 30px;
 
 // Import fonts from Google Fonts
 @import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900|Open+Sans+Condensed:300,700');

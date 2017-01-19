@@ -1,30 +1,3 @@
-// Section Part Bee Style
-%themed{
-    &.alpha {
-        background-color: $color_primary;
-        @extend %contrast;
-    }
-
-    &.beta {
-        background-color: darken($color_primary, 20%);
-        @extend %contrast;
-    }
-
-    &.gama {
-        background-color: $color_ascent;
-        @extend %contrast;
-    }
-
-    &.tetha {
-        background-color: darken($color_ascent, 20%);
-        @extend %contrast;
-    }
-
-    &.omega {
-        background-color: #f4f4f4;
-    }
-}
-
 .section {
     display: block;
     @include padding-height($pd*2);
@@ -55,8 +28,8 @@
         }
     }
 }
-// Contrast Clas Settings
 
+// Contrast Clas Settings
 %contrast {
     color: $color_text_contrast;
 
@@ -66,10 +39,27 @@
 
     a {
         text-decoration: underline;
+
         color: $color_text_contrast;
+
+        &:focus{
+            background-color: $color_text_contrast !important;
+            color: $c_alpha;
+        }
+
         &:hover {
             text-decoration: none;
             color: $color_text_contrast;
+        }
+
+        &[href^="http://"],
+        &[href^="https://"] {
+            text-decoration: none;
+            border-color: $color_text_contrast;
+
+            &:hover{
+                border-bottom-style: solid;
+            }
         }
     }
 
@@ -82,12 +72,12 @@
         }
     }
 
-    hr.gama {
+    hr {
         background-color: $color_text_contrast;
     }
 }
-// Footer section
 
+// Footer section
 .footer {
     @extend .section;
     .header {

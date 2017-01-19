@@ -5,8 +5,17 @@ $selector: ();
     .text-align-#{$item}{
         text-align: $item;
     }
+
+    @each $key, $breakpoint in $breakpoints {
+        @include mediaBySize($key){
+            .text-align-#{$item}-#{$key}{
+                text-align: $item;
+            }
+        }
+    }
 }
 
+// Powered Default config
 #powered{
     @extend %themed;
     @include padding-height($pd);

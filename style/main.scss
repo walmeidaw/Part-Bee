@@ -2,16 +2,19 @@
 @import 'vendor/normalize';
 
 // Base
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/reset';
-@import 'base/core';
+@import 'base/variables';        // Framework's Variables
+@import 'base/placeholders';     // Framework's Placeholders
+@import 'base/mixins';           // Framework's Mixins
+@import 'base/reset';            // Framework's Basic Reset
 
 // Frameworks
-@import 'framework/grid';
-//@import 'frameworks/bootstraping';
+@import 'framework/core';             // Framework's Core
+@import 'framework/grid';        // Framework's Grid System + Grid debug system
+@import 'framework/bootstraping';// Framework's Bootstrap theming
 
 // modules
-@import 'modules/section';
-@import 'modules/navigation';
-@import 'modules/partbee';
+@import 'modules/section';       // Framework's Section module
+@import 'modules/navigation';    // Framework's Navigation module
+@import 'modules/buttons';       // Framework's Buttons module
+@import 'modules/ad';            // Framework's Ad module
+@import 'modules/partbee';       // Framework's Partbee module with generic classes

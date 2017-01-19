@@ -1,0 +1,49 @@
+%themed{
+    &.alpha {
+        background-color: $c_alpha;
+        @extend %contrast;
+
+        a{
+            &:focus{
+                color: $c_alpha !important;
+            }
+        }
+    }
+
+    &.beta {
+        background-color: $c_beta;
+        @extend %contrast;
+
+        a{
+            &:focus{
+                color: $c_beta !important;
+            }
+        }
+    }
+
+    &.gama {
+        background-color: $c_gama;
+        @extend %contrast;
+
+        a{
+            &:focus{
+                color: $c_gama !important;
+            }
+        }
+    }
+
+    &.tetha {
+        background-color: $c_tetha;
+        @extend %contrast;
+
+        a{
+            &:focus{
+                color: $c_tetha !important;
+            }
+        }
+    }
+
+    &.omega {
+        background-color: $c_omega;
+    }
+}
