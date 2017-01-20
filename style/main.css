@@ -1,12 +1,3 @@
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
-/* Document
-   ========================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900|Open+Sans+Condensed:300,700");
 html {
 	font-family: sans-serif;
@@ -448,35 +439,35 @@ template {
 }
 
 .alpha.section, .alpha.footer, .alpha#powered {
-	background-color: #e1e151;
+	background-color: #41f1b3;
 }
 
 .alpha.section a:focus, .alpha.footer a:focus, .alpha#powered a:focus {
-	color: #e1e151 !important;
+	color: #41f1b3 !important;
 }
 
 .beta.section, .beta.footer, .beta#powered {
-	background-color: #c4c422;
+	background-color: #10d690;
 }
 
 .beta.section a:focus, .beta.footer a:focus, .beta#powered a:focus {
-	color: #c4c422 !important;
+	color: #10d690 !important;
 }
 
 .gama.section, .gama.footer, .gama#powered {
-	background-color: #224dc4;
+	background-color: #d6108b;
 }
 
 .gama.section a:focus, .gama.footer a:focus, .gama#powered a:focus {
-	color: #224dc4 !important;
+	color: #d6108b !important;
 }
 
 .tetha.section, .tetha.footer, .tetha#powered {
-	background-color: #163383;
+	background-color: #8f0a5c;
 }
 
 .tetha.section a:focus, .tetha.footer a:focus, .tetha#powered a:focus {
-	color: #163383 !important;
+	color: #8f0a5c !important;
 }
 
 .omega.section, .omega.footer, .omega#powered {
@@ -506,7 +497,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: #e1e151;
+	color: #41f1b3;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
@@ -516,12 +507,12 @@ a {
 
 a:active, a:hover {
 	text-decoration: underline;
-	color: #c4c422;
+	color: #10d690;
 }
 
 a:focus {
 	color: #ffffff !important;
-	background: #e1e151 !important;
+	background: #41f1b3 !important;
 	border-radius: 4px;
 	outline: none;
 	text-decoration: none;
@@ -529,22 +520,18 @@ a:focus {
 }
 
 a[href^="http://"], a[href^="https://"] {
-	color: #224dc4;
-	border-bottom: dotted 1px #224dc4;
+	color: #d6108b;
+	border-bottom: dotted 1px #d6108b;
 }
 
 a[href^="http://"]:active, a[href^="http://"]:hover, a[href^="https://"]:active, a[href^="https://"]:hover {
 	text-decoration: none;
-	border-bottom-color: #163383;
+	border-bottom-color: #8f0a5c;
 }
 
 a[href^="http://"]:focus, a[href^="https://"]:focus {
 	color: #ffffff !important;
-	background: #224dc4 !important;
-}
-
-a:visited {
-	color: #c4c422;
+	background: #d6108b !important;
 }
 
 a.disabled {
@@ -577,17 +564,17 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 h1, h2 {
 	font-size: 40px;
-	color: #e1e151;
+	color: #41f1b3;
 }
 
 h3, h4 {
 	font-size: 30px;
-	color: #dada25;
+	color: #11eea0;
 }
 
 h5, h6 {
 	font-size: 24px;
-	color: #aeae1e;
+	color: #0ebe80;
 }
 
 h1, h2, h3, h5 {
@@ -603,19 +590,19 @@ hr {
 }
 
 hr.alpha {
-	background-color: #e1e151;
+	background-color: #41f1b3;
 }
 
 hr.beta {
-	background-color: #c4c422;
+	background-color: #10d690;
 }
 
 hr.gama {
-	background-color: #224dc4;
+	background-color: #d6108b;
 }
 
 hr.tetha {
-	background-color: #163383;
+	background-color: #8f0a5c;
 }
 
 hr.omega {
@@ -750,13 +737,13 @@ body.debug:before {
 	border-radius: 2px;
 	color: #ffffff;
 	mix-blend-mode: multiply;
-	background-color: #224dc4;
+	background-color: #d6108b;
 }
 
 body.debug:after {
 	left: 35px;
 	mix-blend-mode: multiply;
-	color: #224dc4;
+	color: #d6108b;
 }
 
 .form-control {
@@ -782,7 +769,7 @@ body.debug:after {
 }
 
 .pagination > li > a, .pagination > li > span {
-	color: #e1e151;
+	color: #41f1b3;
 	margin: 0px 2px;
 	border-radius: 2px !important;
 	border-color: #e0e0e0;
@@ -795,13 +782,13 @@ body.debug:after {
 
 .pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > span:hover, .pagination > li > span:focus {
 	color: #ffffff;
-	background-color: #e1e151;
-	border-color: #e1e151;
+	background-color: #41f1b3;
+	border-color: #41f1b3;
 }
 
 .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
-	background-color: #c4c422;
-	border-color: #aeae1e;
+	background-color: #10d690;
+	border-color: #0ebe80;
 }
 
 .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus, .pagination > .disabled > a:active, .pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > span:active {
@@ -856,7 +843,7 @@ body.debug:after {
 
 .alpha.section a:focus, .alpha.footer a:focus, .alpha#powered a:focus, .beta.section a:focus, .beta.footer a:focus, .beta#powered a:focus, .gama.section a:focus, .gama.footer a:focus, .gama#powered a:focus, .tetha.section a:focus, .tetha.footer a:focus, .tetha#powered a:focus {
 	background-color: #ffffff !important;
-	color: #e1e151;
+	color: #41f1b3;
 }
 
 .alpha.section a:hover, .alpha.footer a:hover, .alpha#powered a:hover, .beta.section a:hover, .beta.footer a:hover, .beta#powered a:hover, .gama.section a:hover, .gama.footer a:hover, .gama#powered a:hover, .tetha.section a:hover, .tetha.footer a:hover, .tetha#powered a:hover {
@@ -959,7 +946,7 @@ nav[role="menu"] a:hover {
 }
 
 nav[role="menu"] a:hover:after {
-	background-color: #e1e151;
+	background-color: #41f1b3;
 }
 
 @media (max-width: 480px) {
@@ -974,13 +961,13 @@ nav[role="menu"] a.active, nav[role="menu"] a:active {
 
 @media (max-width: 480px) {
 	nav[role="menu"] a.active, nav[role="menu"] a:active {
-		background-color: #dada25;
+		background-color: #11eea0;
 		color: #ffffff;
 	}
 }
 
 nav[role="menu"] a.active:after, nav[role="menu"] a:active:after {
-	background-color: #dada25;
+	background-color: #11eea0;
 }
 
 @media (max-width: 480px) {
@@ -1002,7 +989,7 @@ nav[role="menu"] a:focus {
 }
 
 nav[role="menu"] a:focus:after {
-	background-color: #224dc4;
+	background-color: #d6108b;
 }
 
 @media (max-width: 480px) {
@@ -1020,12 +1007,12 @@ nav[role="list"] a {
 }
 
 nav[role="list"] a:hover {
-	color: #e1e151;
+	color: #41f1b3;
 	text-decoration: underline;
 }
 
 nav[role="list"] a:active, nav[role="list"] a:focus {
-	color: #dada25 !important;
+	color: #11eea0 !important;
 	background-color: transparent !important;
 	text-decoration: underline;
 }
@@ -1063,93 +1050,93 @@ nav[role="list"].half-item a {
 }
 
 .btn.btn-alpha {
-	background-color: #e1e151;
+	background-color: #41f1b3;
 	color: #ffffff;
-	border-color: #dddd3b;
+	border-color: #29efa9;
 }
 
 .btn.btn-alpha:hover {
-	background-color: #dada25;
+	background-color: #11eea0;
 	color: #ffffff;
-	border-color: #c4c422;
+	border-color: #10d690;
 }
 
 .btn.btn-alpha.active, .btn.btn-alpha:active, .btn.btn-alpha:focus {
-	background-color: #aeae1e;
+	background-color: #0ebe80;
 	color: #ffffff;
-	border-color: #98981a;
+	border-color: #0ca670;
 }
 
 .btn.btn-beta {
-	background-color: #c4c422;
+	background-color: #10d690;
 	color: #ffffff;
-	border-color: #aeae1e;
+	border-color: #0ebe80;
 }
 
 .btn.btn-beta:hover {
-	background-color: #98981a;
+	background-color: #0ca670;
 	color: #ffffff;
-	border-color: #838316;
+	border-color: #0a8f60;
 }
 
 .btn.btn-beta.active, .btn.btn-beta:active, .btn.btn-beta:focus {
-	background-color: #6d6d13;
+	background-color: #097750;
 	color: #ffffff;
-	border-color: #57570f;
+	border-color: #075f40;
 }
 
 .btn.btn-gama {
-	background-color: #224dc4;
+	background-color: #d6108b;
 	color: #ffffff;
-	border-color: #1e44ae;
+	border-color: #be0e7b;
 }
 
 .btn.btn-gama:hover {
-	background-color: #1a3c98;
+	background-color: #a60c6c;
 	color: #ffffff;
-	border-color: #163383;
+	border-color: #8f0a5c;
 }
 
 .btn.btn-gama.active, .btn.btn-gama:active, .btn.btn-gama:focus {
-	background-color: #132b6d;
+	background-color: #77094d;
 	color: #ffffff;
-	border-color: #0f2257;
+	border-color: #5f073e;
 }
 
 .btn.btn-tetha {
-	background-color: #163383;
+	background-color: #8f0a5c;
 	color: #ffffff;
-	border-color: #132b6d;
+	border-color: #77094d;
 }
 
 .btn.btn-tetha:hover {
-	background-color: #0f2257;
+	background-color: #5f073e;
 	color: #ffffff;
-	border-color: #0b1a41;
+	border-color: #47052e;
 }
 
 .btn.btn-tetha.active, .btn.btn-tetha:active, .btn.btn-tetha:focus {
-	background-color: #07112c;
+	background-color: #30031f;
 	color: #ffffff;
-	border-color: #040916;
+	border-color: #18020f;
 }
 
 .btn.btn-default {
 	background-color: #ffffff;
-	color: #e1e151;
-	border-color: #e9e97c;
+	color: #41f1b3;
+	border-color: #70f5c6;
 }
 
 .btn.btn-default:hover {
-	background-color: #e1e151;
+	background-color: #41f1b3;
 	color: #ffffff;
-	border-color: #e3e35e;
+	border-color: #4ff2b9;
 }
 
 .btn.btn-default.active, .btn.btn-default:active, .btn.btn-default:focus {
-	background-color: #dcdc32;
+	background-color: #20efa5;
 	color: #ffffff;
-	border-color: #e3e35e;
+	border-color: #4ff2b9;
 }
 
 .ad-container {

@@ -13,10 +13,9 @@
     @return $color;
 }
 
-
 // Colors Settings
 $color_primary: color(); // Main color DEFAULT #a200ff
-$color_ascent:  ascent($color_primary); // A contrast color DEFAULT #73b500
+$color_ascent: ascent($color_primary); // A contrast color DEFAULT #73b500
 $color_soft: #e0e0e0; // For disabled and discreet things
 $color_text_default: #2e2e36; // Text default
 $color_text_contrast: #ffffff; // Text in contrast (in case of backgrounds inverted)

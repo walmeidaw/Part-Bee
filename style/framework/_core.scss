@@ -46,10 +46,6 @@ a {
         }
     }
 
-    &:visited {
-        color: $c_beta;
-    }
-
     &.disabled {
         color: lighten($color_text_default, 70%);
 
