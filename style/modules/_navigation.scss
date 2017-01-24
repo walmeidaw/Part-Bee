@@ -90,6 +90,21 @@ nav[role="menu"] {
     }
 }
 
+nav[role="pagination"]{
+    ul{
+        margin: 0px;
+        list-style: none;
+        display: inline-block;
+
+        li{
+            display: inline-block;
+            padding: 0px $pd;
+            line-height: $pd*2;
+            margin: 0px $md/3;
+        }
+    }
+}
+
 
 nav[role="list"] {
     a{

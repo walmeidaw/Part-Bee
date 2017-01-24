@@ -24,6 +24,11 @@
     transition: all $time ease;
 }
 
+@mixin shadowbox($size, $color){
+    -webkit-box-shadow: 0 0 $size 2px $color;
+    box-shadow: 0 0 $size 2px $color;
+}
+
 @mixin box-sizing($value) {
     -webkit-box-sizing: $value;
     -moz-box-sizing: $value;

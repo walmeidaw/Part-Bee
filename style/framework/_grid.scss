@@ -80,6 +80,11 @@ $breakpoints: (
 
             @extend %col-debug;
         }
+        .col-#{$key}-offset-#{$i} {
+            @include noBootstrapStatus(true){
+                margin-left: 100% * $i / map-get($settings,"columns");
+            }
+        }
         $i: $i+1;
     }
 }
