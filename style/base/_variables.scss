@@ -14,15 +14,16 @@
 }
 
 // Colors Settings
-$color_primary: color(); // Main color DEFAULT #a200ff
-$color_ascent: ascent($color_primary); // A contrast color DEFAULT #73b500
+$color_primary: #fd5244; // Main color DEFAULT #a200ff
+$color_ascent: #720bb3; // A contrast color DEFAULT #73b500
 $color_soft: #e0e0e0; // For disabled and discreet things
-$color_text_default: #2e2e36; // Text default
+$color_text_default: #2c2c2c; // Text default
 $color_text_contrast: #ffffff; // Text in contrast (in case of backgrounds inverted)
 
-// Background Settings
+// Background Settingsrgb(97, 240, 210)
 $background: #ffffff; // Background
 $background_secondary: #f4f4f4; // A alternative Background
+
 
 // Themed Colors
 $c_alpha: $color_primary;
@@ -32,9 +33,9 @@ $c_tetha: darken($color_ascent, 15%);
 $c_omega: $background_secondary;
 
 // Fonts Settings
-$font_default: 300 16px/20px "Raleway", sans-serif; // Default font settings for document
-$font_title: 400 20px "Open Sans", sans-serif; // Default font settings for headers elements
-$font_text: 300 16px/20px "Open Sans", sans-serif; // Default font settings for commom text in documents (<p> elements in <article> tags)
+$font_default: 300 15px/1.5 "Open Sans", sans-serif; // Default font settings for document
+$font_title: 300 24px "Open Sans", sans-serif; // Default font settings for headers elements
+$font_text: 300 15px/1.5 "Open Sans", sans-serif; // Default font settings for commom text in documents (<p> elements in <article> tags)
 $font_debug: 300 16px/1 "Open Sans Condensed", sans-serif;
 
 // Misc Settings
@@ -48,4 +49,4 @@ $columns: 12;
 $gutter: 30px;
 
 // Import fonts from Google Fonts
-@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900|Open+Sans+Condensed:300,700');
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Open+Sans+Condensed:300,700');

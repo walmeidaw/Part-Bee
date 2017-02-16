@@ -6,7 +6,12 @@
     .header {
         text-align: center;
 
-        h1,h2,h3,h4,h5,h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             color: $color_text_default;
             font-weight: 300;
 
@@ -28,7 +33,6 @@
         }
     }
 }
-
 // Contrast Clas Settings
 %contrast {
     color: $color_text_contrast;
@@ -37,35 +41,30 @@
         color: $color_text_contrast;
     }
 
-    a {
-        text-decoration: underline;
+    p a, span a, .contrast a{
+      text-decoration: underline;
+      color: $color_text_contrast;
 
-        color: $color_text_contrast;
+      &:focus {
+          background-color: $color_text_contrast !important;
+          color: $c_alpha;
+      }
 
-        &:focus{
-            background-color: $color_text_contrast !important;
-            color: $c_alpha;
-        }
-
-        &:hover {
-            text-decoration: none;
-            color: $color_text_contrast;
-        }
-
-        &[href^="http://"],
-        &[href^="https://"] {
-            text-decoration: none;
-            border-color: $color_text_contrast;
-
-            &:hover{
-                border-bottom-style: solid;
-            }
-        }
+      &:hover {
+          text-decoration: none;
+          color: $color_text_contrast;
+      }
     }
 
-    h1,h2,h3,h4,h5,h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: $color_text_contrast;
         font-weight: 300;
+
         small {
             color: $color_text_contrast;
             font-weight: 600;
@@ -76,13 +75,19 @@
         background-color: $color_text_contrast;
     }
 }
-
 // Footer section
 .footer {
     @extend .section;
+
     .header {
         text-align: left;
-        h1,h2,h3,h4,h5,h6 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             text-transform: none;
             font-size: 20px;
             font-weight: 300;

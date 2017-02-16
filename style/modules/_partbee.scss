@@ -96,6 +96,7 @@ input{
 nav{
     ul.pagination{
         display: block;
+
         li{
             display: inline-block;
             padding: 0px;
@@ -103,10 +104,32 @@ nav{
             a{
                 border: 1px solid darken($c_omega, 10%);
                 background-color: $c_omega;
+                border-radius: 4px;
                 height: 40px;
                 line-height: 40px;
                 min-width: 40px;
                 display: block;
+                text-decoration: none;
+
+                &:hover,
+                &:focus{
+                    border-color: $c_beta;
+                    background-color: $c_alpha;
+                    color: $color_text_contrast;
+                }
+            }
+
+            &.active{
+                a{
+                    border-color: $c_gama;
+                    background-color: lighten($c_gama,10%);
+                    color: $color_text_contrast;
+
+                    &:hover{
+                        border-color: $c_tetha;
+                        background-color: $c_gama;
+                    }
+                }
             }
         }
     }

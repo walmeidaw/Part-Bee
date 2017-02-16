@@ -56,7 +56,7 @@
                 &,
                 &:hover,
                 &:focus,
-                &:active{
+                &.active{
                     background-color: lighten($color_soft, 10%) !important;
                     border-color: $color_soft !important;
                     color: $color_soft !important;

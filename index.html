@@ -1,438 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <title>Part Bee V1</title>
+    <title>PartBee Framework</title>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="style/master.css">
+    <link rel="stylesheet" href="demo/default.css" />
 
-
-    <link rel="stylesheet" href="style/main.css">
-    <style media="screen">
-        #header {
-            height: 100px;
-            display: block;
-            margin: 15px 0px;
-        }
-    </style>
 </head>
 
 <body>
-    <div id="page-begin">
-        <header id="header">
-
-        </header>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <nav role="menu">
-                        <a href="#">Início</a>
-                        <a href="#">Link A</a>
-                        <a href="#">Link B</a>
-                        <a href="#">Link Holver</a>
-                        <a class="active" href="#">Link Active</a>
-                        <a href="#">Link Focus</a>
-                        <a href="#">Link C</a>
-                    </nav>
+    <div id="page-content">
+        <!-- HEADER -->
+        <div id="header" class="section alpha text-align-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="partbee">
+                            <div id="brand-partbee">
+                                <img src="demo/logo.svg" alt="" id="logo-partbee">
+                                <div id="name-partbee">part<b>bee</b></div>
+                            </div>
+                        </div>
+                        <div class="link-commom">
+                            by @<a href="https://twitter.com/walmeidaw">walmeidaw</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-offset-3 col-md-3">
+                        <a href="demo.html" class="btn btn-gama btn-block">DEMO</a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <a href="https://github.com/walmeidaw/Part-Bee" class="btn btn-default btn-block" title="It's new!">
+                            <i class="fa fa-star"></i> I WANNA
+                            <b class="water">VERSION BETA 2</b>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <section class="section">
+        <!-- INTRO -->
+        <div id="intro">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12">
-                        <header class="header">
-                            <h1>Título da Seção <small>plus</small></h1>
-                        </header>
-                    </div>
-                    <div class="col-xs-12">
-                        <article class="caption">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero <a href="text.html">link interno</a> omnis voluptatum accusamus error voluptas nihil, iusto <i>labore ipsam</i> adipisci optio, <a href="http://google.com">link externo</a>                                numquam sit dolores quam, provident? Sit ea natus eveniet officia.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section alpha">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <header class="header">
-                            <h1>Título da Seção <small>plus</small></h1>
-                        </header>
-                    </div>
-                    <div class="col-xs-12">
-                        <article class="caption">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero <a href="text.html">link interno</a> omnis voluptatum accusamus error voluptas nihil, iusto <i>labore ipsam</i> adipisci optio, <a href="http://google.com">link externo</a>                                numquam sit dolores quam, provident? Sit ea natus eveniet officia.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section beta">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <header class="header">
-                            <h1>Título da Seção <small>plus</small></h1>
-                        </header>
-                    </div>
-                    <div class="col-xs-12">
-                        <article class="caption">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero <a href="text.html">link interno</a> omnis voluptatum accusamus error voluptas nihil, iusto <i>labore ipsam</i> adipisci optio, <a href="http://google.com">link externo</a>                                numquam sit dolores quam, provident? Sit ea natus eveniet officia.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section gama">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <header class="header">
-                            <h1>Título da Seção <small>plus</small></h1>
-                        </header>
-                    </div>
-                    <div class="col-xs-12">
-                        <article class="caption">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero <a href="text.html">link interno</a> omnis voluptatum accusamus error voluptas nihil, iusto <i>labore ipsam</i> adipisci optio, <a href="http://google.com">link externo</a>                                numquam sit dolores quam, provident? Sit ea natus eveniet officia.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section tetha">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <header class="header">
-                            <h1>Título da Seção <small>plus</small></h1>
-                        </header>
-                    </div>
-                    <div class="col-xs-12">
-                        <article class="caption">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero <a href="text.html">link interno</a> omnis voluptatum accusamus error voluptas nihil, iusto <i>labore ipsam</i> adipisci optio, <a href="http://google.com">link externo</a>                                numquam sit dolores quam, provident? Sit ea natus eveniet officia.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section omega">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <header class="header">
-                            <h1>Título da Seção <small>plus</small></h1>
-                        </header>
-                    </div>
-                    <div class="col-xs-12">
-                        <article class="caption">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero <a href="text.html">link interno</a> omnis voluptatum accusamus error voluptas nihil, iusto <i>labore ipsam</i> adipisci optio, <a href="http://google.com">link externo</a>                                numquam sit dolores quam, provident? Sit ea natus eveniet officia.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h2>Título h1 & h2 <small>small tag</small></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dolores laboriosam sunt ratione molestias, consequatur quaerat eius! Consequuntur vero blanditiis numquam, veniam, rem labore deserunt laboriosam omnis tempora nisi
-                            hic.
-                        </p>
-                        <p>Perspiciatis ex explicabo officiis provident distinctio magnam ipsum adipisci enim quasi voluptatem, mollitia fugit praesentium! Quia quod, inventore dolore, ratione cum natus voluptatum quaerat nemo ullam, corporis quae porro!
-                            Doloremque.
-                        </p>
-                        <p>Veritatis esse doloremque ad vero perferendis rerum itaque iure accusantium! Voluptatem placeat, magni numquam asperiores quisquam non molestias ducimus unde sunt doloribus tenetur facilis repudiandae nulla, iure necessitatibus!
-                            Pariatur, necessitatibus.</p>
-                        <hr class="alpha">
-                        <h3>Título h3 <small>small tag</small></h3>
-                        <p>Amet nemo sequi dolores quod inventore culpa eum labore expedita excepturi id animi, magni soluta ex, molestiae optio nulla eligendi. Nam sint dolore, earum delectus corporis nulla necessitatibus cupiditate temporibus.</p>
-                        <p>Iure magnam voluptates, officia omnis sequi perspiciatis cum, optio, voluptatem soluta officiis numquam porro placeat, assumenda tenetur! Cumque architecto non adipisci nihil doloremque deleniti beatae. Optio beatae assumenda aspernatur
-                            sunt!
-                        </p>
-                        <p>Dolorem quis, dolorum doloribus facere saepe adipisci sed voluptate quae distinctio, ex similique earum magnam quas aut voluptates nesciunt iusto corporis cumque rerum. Nemo quaerat, sunt laboriosam mollitia recusandae harum.</p>
-                        <hr class="beta">
-                        <h4>Título h4 <small>small tag</small></h4>
-                        <p>Quod vitae eum commodi facere quis! Ut temporibus, neque? Ab nobis, vero deleniti eos at recusandae fugiat dolore, rem, voluptas suscipit culpa accusamus repellendus minima labore laborum impedit quis quod.</p>
-                        <p>Ad quisquam similique numquam, dolore expedita blanditiis, excepturi consectetur libero, id ab eveniet voluptatum quos doloremque asperiores temporibus omnis ratione, quidem totam sequi! Quidem quos asperiores delectus ducimus
-                            aperiam! Nobis!</p>
-                        <p>Maiores dolorem provident eum, voluptas similique excepturi molestias esse quaerat est repellat eligendi repellendus illo, saepe! Repellendus, harum alias. In repellendus suscipit minima eveniet, ducimus ex aperiam. Iure, nisi,
-                            pariatur!
-                        </p>
-                        <hr class="gama">
-                        <h5>Título h5 <small>small tag</small></h5>
-                        <p>Et aliquam, distinctio debitis, eligendi cum repellat magnam error nihil reprehenderit cupiditate enim! Veritatis atque, suscipit corporis minus quae perspiciatis esse culpa cumque. Id rerum, commodi sit quod fugit accusantium.</p>
-                        <p>I work with design since 2009 when I started the college. I can create PSD templates I can code the front end of them and I can code the back end too. But since I never made the portifolio. Maybe cause I'm usually focused on finish
-                            the current project to start the next one. So I forget to save pictures and informations about works to build them as my portifolio.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero <a href="text.html">link interno</a> omnis voluptatum accusamus error voluptas nihil, iusto <i>labore ipsam</i> adipisci optio, <a href="http://google.com">link externo</a>                            numquam sit dolores quam, provident? Sit ea natus eveniet officia.</p>
-                        <hr class="omega">
-                        <h6>Título h6 <small>small tag</small></h6>
-                        <p>I'm here 7 years after to make something like this. Like a portifolio. But different. I'm good to follow patterns I swear! But I'm a designer and I have a taste for the new. So, to show my job I started the <b>PartBee</b> as a
-                            responsive reusable HTML components. I build independent parts HTML using frameworks for web pages.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quae eaque accusantium consequuntur molestias voluptatem dolor laboriosam, dicta illum. Veniam hic alias molestias, dolor neque nam officia praesentium, perferendis
-                            odit.
-                        </p>
-                        <hr class="tetha">
-                        <p>Facere animi, eos eaque quos omnis reiciendis numquam, labore commodi earum quae, doloribus. Tenetur tempora animi fuga repellat provident, alias soluta officiis sint delectus, expedita officia facere, eligendi, eveniet ullam.</p>
-                        <p>Deleniti omnis aspernatur, accusamus non odit architecto autem nihil natus, expedita eius eveniet, assumenda. Atque voluptatibus doloribus doloremque voluptas aut ad non blanditiis, aliquid incidunt quas impedit error reiciendis
-                            delectus.
-                        </p>
-                        <hr>
-                        <p>Nostrum iusto dolores earum veritatis molestiae fugiat est doloribus numquam facilis. Corporis corrupti minus eveniet doloremque ut, officia quia suscipit velit iste molestiae tenetur esse quasi, facere excepturi ab voluptates?</p>
-                        <p>Fugit adipisci vero nam cupiditate id distinctio rerum, cumque? Rerum, aliquid blanditiis cumque accusamus eius officia necessitatibus possimus soluta. Molestiae ipsam sint quod explicabo labore dicta blanditiis repudiandae possimus
-                            magni.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <aside class="ad-container">
-                            <a href="#" class="ad-item"><img src="http://placehold.it/1170x150" alt="Placeholder"></a>
-                        </aside>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section alpha">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="framebox"><img src="http://placehold.it/500x500" alt=""></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="framebox"><img src="http://placehold.it/500x500" alt=""></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="framebox"><img src="http://placehold.it/500x500" alt=""></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="framebox"><img src="http://placehold.it/500x500" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section beta">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="framebox"><img src="http://placehold.it/500x500" alt=""></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="framebox"><img src="http://placehold.it/500x500" alt=""></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="framebox"><img src="http://placehold.it/500x500" alt=""></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="framebox"><img src="http://placehold.it/500x500" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section gama">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <a class="framebox"><img src="http://placehold.it/500x500" alt=""></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <a class="framebox"><img src="http://placehold.it/500x500" alt=""></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <a class="framebox"><img src="http://placehold.it/500x500" alt=""></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <a class="framebox"><img src="http://placehold.it/500x500" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section tetha">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="framebox"><img src="http://placehold.it/500x500" alt=""></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="framebox"><img src="http://placehold.it/500x500" alt=""></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="framebox"><img src="http://placehold.it/500x500" alt=""></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="framebox"><img src="http://placehold.it/500x500" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section omega">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <header class="header">
-                            <h1>bootstrap Theming <small>or not</small></h1>
-                        </header>
-                    </div>
-                    <div class="col-xs-12 text-align-center">
-                        <button type="button" class="btn">Button</button>
-                        <button type="button" class="btn btn-default">Default</button>
-                        <button type="button" class="btn btn-alpha">Alpha</button>
-                        <button type="button" class="btn btn-beta">Beta</button>
-                        <button type="button" class="btn btn-gama">Gama</button>
-                        <button type="button" class="btn btn-tetha">Tetha</button>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
-                        <hr class="omega">
-                    </div>
-                    <div class="col-xs-12">
-                        <form class="form-horizontal">
-                            <div class="form-group">
-                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                                </div>
+                    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+                        <section class="section" id="text-intro">
+                            <header class="header">
+                                <h2>Hey <b>You</b>!</h2>
+                            </header>
+                            <div class="section-body">
+                                <p>I work with design since 2009 when I started the college. I can create PSD templates I can code the front end of them and I can code the back end too. But I had never made a portifolio. Maybe cause I'm usually focused on finish the current project to start the next one. So I forget to save pictures and informations about works to build them as my portifolio.</p>
+                                <p>I'm here 8 years after (WOW!) to make something like this. Like a portifolio. But different. I'm good to follow patterns I swear! But I'm a designer and I have a taste for the new. So, to show my job I started the <b>PartBee</b> as a responsive reusable HTML components. I build independent parts HTML using frameworks for web pages.</p>
+                                <p>More that show Templates PSD or HTML pages. I will give my intimity as front-end showing and sharing my code that helps to build pages faster.</p>
+                                <h3>But things change!</h3>
+                                <p>To follow tendencies I rebuild all <b>PartBee</b> using Sass and creating a totaly new CSS framework. This way Bootstrap dependencies was eliminated. I called this version as <b>V beta 2</b> cause I think it's not completed yet.</p>
                             </div>
-                            <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                                <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-lg-6 col-md-offset-0 col-lg-offset-2">
+                        <div class="my-card">
+                            <div class="row">
+                                <div class="photo col-xs-12 col-sm-3">
+                                    <img src="demo/photo.jpg" alt="">
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <div class="checkbox">
-                                        <input type="checkbox">
-                                        <label class="control-label">Remember me</label>
+                                <div class="content col-xs-12 col-sm-9">
+                                    <p>Hey! I was a mermaidunicorn (with cyano hair). Now I'm just a human. I'm M. Sc. Computer Science. Actualy 26 years old and living in Palmas-TO, Brazil. Time a lot as front end.<br>I have feelings for HTML, CSS and JS ♥.</p>
+                                    Send me a message and let me know you too! <br><br>
+                                    <div class="bullet-list fill gama circle">
+                                        <a href="https://www.facebook.com/walmeidaw" class="bullet"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://twitter.com/walmeidaw" class="bullet"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="https://www.instagram.com/walmeidaw/" class="bullet"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="https://www.linkedin.com/in/walmeidaw" class="bullet"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        <a class="bullet item-label" href="https://twitter.com/intent/tweet?text=Hey%20@walmeidaw!%20:D&hashtags=PartBee" target="_blank">
+                                            <span class="text">Say “hey” on Twitter</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <button type="submit" class="btn btn-default btn-block">Sign in</button>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
-                        <hr class="omega">
-                    </div>
-                    <div class="col-xs-12">
-                        <form class="form-inline">
-                            <div class="form-group">
-                                <label for="exampleInputEmail3" class="control-label">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword3" class="control-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <div class="checkbox">
-                                    <input type="checkbox">
-                                    <label class="control-label">Remember me</label>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-alpha">Sign in</button>
-                        </form>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
-                        <hr class="omega">
-                    </div>
-                    <div class="col-xs-12 text-align-center">
-                        <nav role="pagination">
-                            <ul class="pagination">
-                                <li class="disabled">
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li><a href="#">1</a></li>
-                                <li class="active"><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div id="page-end">
-        <footer class="footer alpha">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <header class="header">
-                            <h3><b>Sobre</b> nós</h3>
-                        </header>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <header class="header">
-                            <h3><b>Links</b> úteis</h3>
-                        </header>
-                        <nav role="list" class="half-item">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                            <a href="#">Link 4</a>
-                            <a href="#">Link 5</a>
-                            <a href="#">Link 6</a>
-                            <a href="#">Link 7</a>
-                            <a href="#">Link 8</a>
-                        </nav>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <header class="header">
-                            <h3><b>Vídeo</b> institucional</h3>
-                        </header>
-                        <img src="http://placehold.it/370x200" alt="Placeholder">
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div id="powered" class="beta">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 text-align-center-xs">
-                        <b>Site 2017</b> - Todos os direitos reservados
-                    </div>
-                    <div class="col-xs-12 col-sm-6 text-align-right text-align-center-xs">
-                        Desenvolvido por
-                        <a href="#"><img src="" alt=""></a>
+                    <div class="col-xs-12 col-sm-10 col-md-4 col-lg-2">
+                        <div id="built-in">
+                            Coded with<br><b>no coffee</b>,<br><b>lot love</b><br>and <a href="http://sass-lang.com/"><b>Syntactically Awesome Style Sheet</b></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="section omega">
+          <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <header class="header">
+                        <h2><b>PartBee</b> Components</h2>
+                    </header>
+                </div>
+                <div class="col-xs-12">
+                    <article class="caption">
+                      <!--p><b>PartBee</b> is composed by 3 groups of components: <i>Layout Components</i>, <i>Responsive Structures</i> and <i>Plugins</i>.</p-->
+                      <p>In the new version this changed... <a href="demo.html">visit the demo page</a> to watch it.</p>
+                      <p>Try a cheat <code>↑ ↓ d e v</code> to <b>debug mode</b>... </p>
+                    </article>
+                </div>
+                <!--div class="col-xs-12 col-sm-4">
+                    <h4><b>Layout</b> Components</h4>
+                    <img src="demo/C1.gif" alt="">
+                    <p class="mini">Those that help a build base components of layout like header, navigation menu, sections, featured banner and footer</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h4>Responsive <b>Structures</b></h4>
+                    <img src="demo/C2.gif" alt="">
+                    <p class="mini">These are useful components. They are more a big structure to make your job easier.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h4><b>Plugins</b></h4>
+                    <img src="demo/C3.gif" alt="">
+                    <p class="mini">These are plugins that I created to attend something.</p>
+                </div-->
+            </div>
+          </div>
+        </div>
+        <!-- USING IT -->
+        <section class="section">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <header class="header">
+                  <h2>Using it 🚀</h2>
+                </header>
+              </div>
+              <div class="col-xs-12">
+                <div class="caption">
+                  <p><b>PartBee</b> now is built in Sass and no dependent of Bootstrap. But it's totally fractionated & can be used besides Bootstrap.</p>
+                  <p>You can use just <code>master.css</code>, or you can compile your version of this changing variables in your way. You can change: <i>primary color</i>, <i>ascent color</i>, <i>default fonts</i>, <i>default spaces</i> and let bootstrap be a friend. You can also remove some parts of <b>PartBee</b> when you want.</p>
+                  <code class="block text-align-center">https://walmeidaw.github.io/Part-Bee/style/master.css</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </div>
+    <!-- FOOTER -->
+    <footer class="footer gama">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-md-pull-6">
+                    <div class="powered-footer">
+                        <span>Coded with no coffee, lot love and SaSS by @<a href="https://twitter.com/walmeidaw">walmeidaw</a>.</span>
+                        <div class="clearfix visible-xs"></div>
+                        <span class="water">
+                                (Please, be kind with my code.)
+                                <i class="fa fa-heart"></i>
+                            </span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-md-push-6">
+                    <a class="btn btn-tetha" href="https://www.linkedin.com/in/walmeidaw" id="hireme">Hire me</a>
+                    <div class="bullet-list fill circle inverse tetha">
+                        <a href="https://www.facebook.com/walmeidaw" class="bullet"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/walmeidaw" class="bullet"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/walmeidaw/" class="bullet"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/walmeidaw" class="bullet"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a class="bullet item-label" href="https://twitter.com/intent/tweet?text=Hey%20@walmeidaw!%20:D&hashtags=PartBee" target="_blank">
+                            <span class="text">Say “hey” on Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="http://cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        var debug = false;
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-9120906-22', 'auto');
+        ga('send', 'pageview');
+
+        var debug_mode = false;
         cheet('↑ ↓ d e v', function() {
-            if (debug) {
+            if (debug_mode) {
                 document.body.setAttribute("class", "");
-                debug = false;
+                debug_mode = false;
             } else {
                 document.body.setAttribute("class", "debug");
-                debug = true;
+                debug_mode = true;
             }
         });
     </script>

@@ -1,21 +1,25 @@
 @mixin padding-height($value) {
-      padding-top: $value;
-      padding-bottom: $value;
+    padding-top: $value;
+    padding-bottom: $value;
 }
-
 @mixin margin-height($value) {
-      margin-top: $value;
-      margin-bottom: $value;
+    margin-top: $value;
+    margin-bottom: $value;
 }
-
+@mixin transform($tX, $tY, $r) {
+    -webkit-transform: translateX($tX) translateY($tY) rotate($r);
+    -moz-transform: translateX($tX) translateY($tY) rotate($r);
+    -ms-transform: translateX($tX) translateY($tY) rotate($r);
+    -o-transform: translateX($tX) translateY($tY) rotate($r);
+    transform: translateX($tX) translateY($tY) rotate($r);
+}
 @mixin translate($valueX, $valueY) {
-    -moz-transform: translateX($valueX) translateY($valueY);
     -webkit-transform: translateX($valueX) translateY($valueY);
-    -o-transform: translateX($valueX) translateY($valueY);
+    -moz-transform: translateX($valueX) translateY($valueY);
     -ms-transform: translateX($valueX) translateY($valueY);
+    -o-transform: translateX($valueX) translateY($valueY);
     transform: translateX($valueX) translateY($valueY);
 }
-
 @mixin transition($time) {
     -webkit-transition: all $time ease;
     -moz-transition: all $time ease;
@@ -23,35 +27,30 @@
     -o-transition: all $time ease;
     transition: all $time ease;
 }
-
-@mixin shadowbox($size, $color){
+@mixin shadowbox($size, $color) {
     -webkit-box-shadow: 0 0 $size 2px $color;
     box-shadow: 0 0 $size 2px $color;
 }
-
 @mixin box-sizing($value) {
     -webkit-box-sizing: $value;
     -moz-box-sizing: $value;
     box-sizing: $value;
 }
-
 @mixin media($queryString) {
      @media #{$queryString}{
         @content;
     }
 }
-
 // NEEDED GRID FRAMEWORK
 @mixin mediaBySize($size) {
     $media_data: map-get($breakpoints, $size);
-    @include media(map-get($media_data, "rangeQuery")){
-        @content;
+    @include media(map-get($media_data, "rangeQuery")) {
+         @content;
     }
 }
-
 //No bootstrap filter
-@mixin noBootstrapStatus($value){
-    @if $ignoreBootstrap == $value{
+@mixin noBootstrapStatus($value) {
+     @if $ignoreBootstrap == $value{
         @content;
     }
 }

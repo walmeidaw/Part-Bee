@@ -8,42 +8,25 @@ p {
     font: $font_text;
 }
 
-a {
+a{
     text-decoration: none;
     color: $c_alpha;
 
     @include transition(400ms);
 
-    &:active,
+    &.active,
     &:hover {
         text-decoration: underline;
         color: $c_beta;
     }
 
     &:focus {
-        color: $color_text_contrast !important;
-        background: $c_alpha !important;
+        color: $color_text_contrast;
+        background: $c_alpha;
         border-radius: 4px;
         outline: none;
         text-decoration: none;
         border: none;
-    }
-
-    &[href^="http://"],
-    &[href^="https://"] {
-        color: $c_gama;
-        border-bottom: dotted 1px $c_gama;
-
-        &:active,
-        &:hover {
-            text-decoration: none;
-            border-bottom-color: $c_tetha;
-        }
-
-        &:focus {
-            color: $color_text_contrast !important;
-            background: $c_gama !important;
-        }
     }
 
     &.disabled {
@@ -110,4 +93,16 @@ hr{
 
 img{
     max-width: 100%;
+}
+
+code{
+  border-radius: 8px;
+  background-color: transparentize($c_gama, 0.9);
+  color: $c_tetha;
+  padding: 0px 5px;
+}
+
+code.block{
+  padding: $pd;
+  display: block;
 }
