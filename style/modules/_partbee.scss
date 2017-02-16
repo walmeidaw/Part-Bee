@@ -1,0 +1,143 @@
+$align_list: left right center justify;
+$selector: ();
+
+@each $item in $align_list{
+    .text-align-#{$item}{
+        text-align: $item;
+    }
+
+    @each $key, $breakpoint in $breakpoints {
+        @include mediaBySize($key){
+            .text-align-#{$item}-#{$key}{
+                text-align: $item;
+            }
+        }
+    }
+}
+
+.framebox{
+    border: 1px solid $c_omega;
+    padding: 5px;
+    @include margin-height($md);
+    background: #fff;
+    display: block;
+    border-radius: 2px;
+    @include transition(300ms);
+
+    .alpha &,
+    .beta &{
+        border-color: darken($c_beta, 5%);
+        &:hover{
+            border-color: darken($c_beta, 15%);
+            @include shadowbox(10px, darken($c_beta, 5%));
+        }
+    }
+
+    .gama &,
+    .tetha &{
+        border-color: darken($c_tetha, 5%);
+        &:hover{
+            border-color: darken($c_tetha, 15%);
+            @include shadowbox(10px, darken($c_tetha, 5%));
+        }
+    }
+
+    &>img{
+        border-radius: 2px;
+    }
+}
+
+label{
+    font: $font_text;
+    display: inline-block;
+
+    &.control-label{
+        padding: 10px 0px;
+        font-weight: 400;
+        text-align: right;
+    }
+}
+input{
+    font: $font_text;
+    padding: $pd 10px;
+    height: 40px;
+    border: 1px solid darken($c_omega, 10%);
+    border-radius: 2px;
+    margin-bottom: $md/3;
+
+    &[type=checkbox]{
+        float: left;
+        margin-right: $md;
+    }
+
+    &.form-control{
+        display: block;
+        width: 100%;
+    }
+}
+
+.form-inline{
+    .control-label,
+    .form-group,
+    .form-control{
+        display: inline-block;
+        width: auto;
+    }
+    .form-group,
+    .form-control{
+        margin: 0px $md/3;
+    }
+}
+
+.checkbox{
+    margin: 0px $md;
+}
+
+nav{
+    ul.pagination{
+        display: block;
+
+        li{
+            display: inline-block;
+            padding: 0px;
+
+            a{
+                border: 1px solid darken($c_omega, 10%);
+                background-color: $c_omega;
+                border-radius: 4px;
+                height: 40px;
+                line-height: 40px;
+                min-width: 40px;
+                display: block;
+                text-decoration: none;
+
+                &:hover,
+                &:focus{
+                    border-color: $c_beta;
+                    background-color: $c_alpha;
+                    color: $color_text_contrast;
+                }
+            }
+
+            &.active{
+                a{
+                    border-color: $c_gama;
+                    background-color: lighten($c_gama,10%);
+                    color: $color_text_contrast;
+
+                    &:hover{
+                        border-color: $c_tetha;
+                        background-color: $c_gama;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Powered Default config
+#powered{
+    @extend %themed;
+    @include padding-height($pd);
+    font-size: 12px;
+}
