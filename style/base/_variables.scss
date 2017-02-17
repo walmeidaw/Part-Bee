@@ -22,9 +22,9 @@ $color_text_contrast: #ffffff; // Text in contrast (in case of backgrounds inver
 $background: #ffffff; // Background
 
 // Themed Colors
-$c_alpha: #fd5244; // Main color DEFAULT #4a1190
+$c_alpha: #fd5244; // Main color DEFAULT #4a1190 -> #fd5244
 $c_beta: darken($c_alpha, 15%);
-$c_gama: #720bb3; // A contrast color DEFAULT #0d9ed4
+$c_gama: #720bb3; // A contrast color DEFAULT #0d9ed4 -> #720bb3
 $c_tetha: darken($c_gama, 15%);
 $c_omega: #f4f4f4;
 
