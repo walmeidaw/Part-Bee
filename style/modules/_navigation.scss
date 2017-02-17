@@ -4,7 +4,7 @@ nav[role="menu"] {
     @include padding-height($md);
 
     @include mediaBySize(xs){
-        border:1px solid lighten($color_primary, 40%);
+        border:1px solid lighten($c_alpha, 40%);
         border-radius: 4px;
     }
 
@@ -40,11 +40,11 @@ nav[role="menu"] {
             text-decoration: none;
 
             @include mediaBySize(xs){
-                background-color: lighten($color_primary, 45%);
+                background-color: lighten($c_alpha, 45%);
             }
 
             &:after {
-                background-color: $color_primary;
+                background-color: $c_alpha;
 
                 @include mediaBySize(xs){
                     background-color: transparent;
@@ -57,12 +57,12 @@ nav[role="menu"] {
             text-decoration: none;
 
             @include mediaBySize(xs){
-                background-color: darken($color_primary, 10%);
+                background-color: darken($c_alpha, 10%);
                 color: $color_text_contrast;
             }
 
             &:after {
-                background-color: darken($color_primary, 10%);
+                background-color: darken($c_alpha, 10%);
 
                 @include mediaBySize(xs){
                     background-color: transparent;
@@ -76,11 +76,11 @@ nav[role="menu"] {
             background-color: transparent !important;
 
             @include mediaBySize(xs){
-                background-color: lighten($color_primary, 45%) !important;
+                background-color: lighten($c_alpha, 45%) !important;
             }
 
             &:after {
-                background-color: $color_ascent;
+                background-color: $c_gama;
 
                 @include mediaBySize(xs){
                     background-color: transparent;
@@ -115,12 +115,12 @@ nav[role="list"] {
         color: $color_text_default;
 
         &:hover{
-            color: $color_primary;
+            color: $c_alpha;
             text-decoration: underline;
         }
         &:active,
         &:focus{
-            color: darken($color_primary, 10%) !important;
+            color: darken($c_alpha, 10%) !important;
             background-color: transparent !important;
             text-decoration: underline;
         }

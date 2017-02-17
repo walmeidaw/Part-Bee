@@ -6,6 +6,13 @@
     margin-top: $value;
     margin-bottom: $value;
 }
+@mixin zoom($scale) {
+  -moz-transform: scale($scale);
+  -webkit-transform: scale($scale);
+  -o-transform: scale($scale);
+  -ms-transform: scale($scale);
+  transform: scale($scale);
+}
 @mixin transform($tX, $tY, $r) {
     -webkit-transform: translateX($tX) translateY($tY) rotate($r);
     -moz-transform: translateX($tX) translateY($tY) rotate($r);

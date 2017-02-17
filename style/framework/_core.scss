@@ -1,5 +1,7 @@
 body {
     font: $font_default;
+    background-color: $background;
+    color: $color_text_default;
 }
 
 p {
@@ -100,6 +102,8 @@ code{
   background-color: transparentize($c_gama, 0.9);
   color: $c_tetha;
   padding: 0px 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 code.block{

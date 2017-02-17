@@ -1,6 +1,6 @@
+/* Responsive Rules for Text Alignment */
 $align_list: left right center justify;
 $selector: ();
-
 @each $item in $align_list{
     .text-align-#{$item}{
         text-align: $item;
@@ -8,13 +8,46 @@ $selector: ();
 
     @each $key, $breakpoint in $breakpoints {
         @include mediaBySize($key){
-            .text-align-#{$item}-#{$key}{
+            .text-align-#{$key}-#{$item}{
                 text-align: $item;
             }
         }
     }
 }
 
+/* Responsive Rules for Float */
+$float_list: left none right;
+@each $item in $float_list{
+    .float-#{$item}{
+        float: $item;
+    }
+
+    @each $key, $breakpoint in $breakpoints {
+        @include mediaBySize($key){
+            .float-#{$key}-#{$item}{
+                float: $item !important;
+            }
+        }
+    }
+}
+
+/* Responsive spaces */
+$sides: top right bottom left;
+@each $item in $sides{
+    .padding-#{$item}{
+        padding-#{$item}: $pd;
+    }
+
+    @each $key, $breakpoint in $breakpoints {
+        @include mediaBySize($key){
+            .padding-#{$key}-#{$item}{
+                padding-#{$item}: $pd !important;
+            }
+        }
+    }
+}
+
+/* Others components */
 .framebox{
     border: 1px solid $c_omega;
     padding: 5px;

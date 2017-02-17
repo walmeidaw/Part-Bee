@@ -71,11 +71,22 @@ $breakpoints: (
 
 @mixin renderGrid($key, $settings) {
     $i: 1;
+    .col-#{$key}-offset-0 {
+        @include noBootstrapStatus(true){
+            margin-left: 0;
+        }
+    }
     @while $i <= map-get($settings, "columns") {
         .col-#{$key}-#{$i} {
             @include noBootstrapStatus(true){
                 width: 100% * $i / map-get($settings,"columns");
                 @extend %col-settings;
+            }
+
+            // Margin top and bottom in XS mode
+            @if $key == xs{
+              margin-top: $md/3;
+              margin-bottom: $md/3;
             }
 
             @extend %col-debug;
@@ -187,15 +198,15 @@ body.debug {
         border-radius: 2px;
         color: $color_text_contrast;
         mix-blend-mode: multiply;
-        @include noBootstrapStatus(true){    background-color: $color_primary; }
-        @include noBootstrapStatus(false){   background-color: $color_ascent;  }
+        @include noBootstrapStatus(true){    background-color: $c_alpha; }
+        @include noBootstrapStatus(false){   background-color: $c_gama;  }
     }
 
     &:after {
         @extend %debug-labels;
         left: 35px;
         mix-blend-mode: multiply;
-        @include noBootstrapStatus(true){     color: $color_primary;    }
-        @include noBootstrapStatus(false){    color: $color_ascent;    }
+        @include noBootstrapStatus(true){     color: $c_alpha;    }
+        @include noBootstrapStatus(false){    color: $c_gama;    }
     }
 }
