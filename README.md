@@ -1,12 +1,13 @@
 # [Part-Bee](https://walmeidaw.github.io/Part-Bee/)
+
 PartBee is a simple and beauty CSS framework for faster and easier web developments, created by [Willian Rodrigues](http://twitter.com/walmeidaw) with no coffee but a lot of love.
 
 To know more, check out https://walmeidaw.github.io/Part-Bee/!
 
 ## What's in here?
 
-- [Lets get start](#lets-get-start);
-- The feature list
+- [Lets get start](#lets-get-start)
+- [The feature list](#the-feature-list)
 - Responsive features
 - Documentation
 - Customization
@@ -32,3 +33,9 @@ bootstrap/
     ├── master.css          ~ THIS IS THE MOST IMPORTANT GUY!
     └── master.scss         ~ You can remove this
 ```
+
+If you want, you don't need to use compiled version and use `*.scss` files and change variables (`style/base/variable.scss`) to change color patterns in you PartBee framework version.
+
+## The feature list
+
+It's avaliable on PartBee a lot of features: grid layout; responsive styles and components. If you download the package you can use a debug cheet mode at `demo/demo.html` pressing `↑ ↓ d e v`. It shows: grid layout debug and the actual screen size.
