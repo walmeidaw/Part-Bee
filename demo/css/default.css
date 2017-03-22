@@ -92,11 +92,6 @@
 }
 
 /* HEADER */
-#header {
-	color: #ffffff;
-	background: #fd5244;
-}
-
 #header .link-commom {
 	margin: 0 0 30px;
 	text-align: center;
@@ -265,3 +260,5 @@ p i {
 .fa.fa-star {
 	color: #ffc700;
 }
+
+/*# sourceMappingURL=default.css.map */

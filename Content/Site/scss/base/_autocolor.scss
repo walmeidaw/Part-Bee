@@ -1,0 +1,19 @@
+@function color(){
+    $color: rgb(random(256)-1,random(256)-1,random(256)-1);
+    @if lightness($color) < 60%{
+        $color: lighten($color, 60% - lightness($color));
+    }
+    @return $color;
+}
+
+@function ascent($color){
+    $color: adjust-hue($color, 164);
+    //$color: saturate($color, 0);
+    $color: darken($color, 15);
+    @return $color;
+}
+
+$c_alpha: color();
+$c_beta: darken($c_alpha, 15%);
+$c_gama: ascent($c_alpha);
+$c_tetha: darken($c_gama, 15%);

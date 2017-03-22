@@ -1,0 +1,34 @@
+// PARTBEE
+/**
+  * ╦╔╦╗╔═╗╔═╗╦═╗╔╦╗╔═╗╔╗╔╔╦╗╔═╗
+  * ║║║║╠═╝║ ║╠╦╝ ║ ╠═╣║║║ ║ ║╣
+  * ╩╩ ╩╩  ╚═╝╩╚═ ╩ ╩ ╩╝╚╝ ╩ ╚═╝
+  *
+  * Não alterar esse arquivo, pois ele é gerado automaticamente a partir de ../scss/master.scss
+**/
+
+//Vendor
+@import 'vendor/normalize/normalize';
+@import 'vendor/font-awesome/scss/font-awesome';
+
+// Base
+@import 'base/variables';        // Framework's Variables
+//@import 'base/autocolor';      // Randomize Colors
+@import 'base/configs';          // Framework's Variables
+@import 'base/mixins';           // Framework's Mixins
+@import 'base/placeholders';     // Framework's Placeholders
+@import 'base/fonts';            // Framework's Font Load
+
+// Frameworks
+@import 'framework/core';        // Framework's Core
+@import 'framework/grid';        // Framework's Grid System + Grid debug system
+@import 'framework/bootstraping';// Framework's Bootstrap theming
+
+// modules
+@import 'modules/section';       // Framework's Section margin-left: ;e
+@import 'modules/navigation';    // Framework's Navigation module
+@import 'modules/buttons';       // Framework's Buttons module
+@import 'modules/bullets';       // Framework's Bullets module
+@import 'modules/ad';            // Framework's Ad module
+@import 'modules/powered';       // Framework's Partbee module with generic classes
+@import 'modules/partbee';       // Framework's Partbee module with generic classes

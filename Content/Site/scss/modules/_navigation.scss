@@ -1,0 +1,176 @@
+$menu_height: 50px;
+
+.navigation{
+  nav[role="menu"] {
+      @include padding-height($md);
+      @include mediaBySize(xs){
+          border:1px solid lighten($c_alpha, 40%);
+          border-radius: 4px;
+      }
+
+      a {
+          position: relative;
+
+          display: inline-block;
+
+          height: $menu_height;
+          margin: 0 $pd;
+
+          color: $color_text_default;
+          background: transparent;
+
+          font-weight: 400;
+          line-height: $menu_height;
+
+          @include mediaBySize(xs){
+              display: block;
+
+              text-align: center;
+
+              border-radius: 4px;
+          }
+
+          &:after {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+
+              display: block;
+
+              width: 80%;
+              height: 3px;
+
+              content: "";
+
+              background-color: transparent;
+
+              @include translate(-50%, 0);
+          }
+
+          &:hover {
+              text-decoration: none;
+
+              @include mediaBySize(xs){
+                  background-color: lighten($c_alpha, 45%);
+              }
+
+              &:after {
+                  background-color: $c_alpha;
+
+                  @include mediaBySize(xs){
+                      background-color: transparent;
+                  }
+              }
+          }
+
+          &.active,
+          &:active {
+              text-decoration: none;
+
+              @include mediaBySize(xs){
+                  color: $color_text_contrast;
+                  background-color: darken($c_alpha, 10%);
+              }
+
+              &:after {
+                  background-color: darken($c_alpha, 10%);
+
+                  @include mediaBySize(xs){
+                      background-color: transparent;
+                  }
+              }
+          }
+
+          &:focus {
+              text-decoration: none;
+
+              color: $color_text_default !important;
+              background-color: transparent !important;
+
+              @include mediaBySize(xs){
+                  background-color: lighten($c_alpha, 45%) !important;
+              }
+
+              &:after {
+                  background-color: $c_gama;
+
+                  @include mediaBySize(xs){
+                      background-color: transparent;
+                  }
+              }
+          }
+      }
+  }
+}
+
+nav[role="pagination"]{
+    ul{
+        margin: 0px;
+        list-style: none;
+        display: inline-block;
+
+        li{
+            display: inline-block;
+            padding: 0px $pd;
+            margin: 0px $md/3;
+
+            @include mediaBySize(xs){
+              margin: 0px;
+            }
+        }
+    }
+
+    ul.pagination{
+        display: block;
+
+        li{
+            display: inline-block;
+            padding: 0px;
+
+            a{
+                border: 1px solid darken($c_omega, 10%);
+                background-color: $c_omega;
+                border-radius: 4px;
+                line-height: 20px;
+                padding: 10px 0;
+                min-width: 40px;
+                display: block;
+                text-decoration: none;
+            }
+        }
+
+        @include custom_pages($c_omega, $color_text_default, $c_alpha, $color_text_contrast, $c_beta, $color_text_contrast);
+
+        &.alpha{ @include custom_pages($color_text_contrast, $c_alpha, lighten($c_alpha, 10%), $color_text_contrast, $c_alpha, $color_text_contrast); }
+        &.beta{ @include custom_pages($color_text_contrast, $c_beta, lighten($c_beta, 10%), $color_text_contrast, $c_beta, $color_text_contrast); }
+        &.gama{ @include custom_pages($color_text_contrast, $c_gama, lighten($c_gama, 10%), $color_text_contrast, $c_gama, $color_text_contrast); }
+        &.tetha{ @include custom_pages($color_text_contrast, $c_tetha, lighten($c_tetha, 10%), $color_text_contrast, $c_tetha, $color_text_contrast); }
+    }
+}
+
+nav[role="list"] {
+    a{
+        display: inline-block;
+        width: 100%;
+        margin: 0px;
+        padding: 3px 0px;
+        color: $color_text_default;
+
+        &:hover{
+            color: $c_alpha;
+            text-decoration: underline;
+        }
+        &:active,
+        &:focus{
+            color: darken($c_alpha, 10%) !important;
+            background-color: transparent !important;
+            text-decoration: underline;
+        }
+    }
+
+    &.half-item{
+        a{
+            width: 49%;
+        }
+    }
+}
