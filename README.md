@@ -15,24 +15,16 @@ To know more, check out https://walmeidaw.github.io/Part-Bee/!
 
 ## Lets get start
 
-The simple way to use it is move `style` PartBee folder to you project. You can remove some folders if you want. 
+The simple way to use it is move `style` PartBee folder to you project. You can remove some folders if you want.
 
 ```
-bootstrap/
-├── demo/
-│   ~ all demo files, you can just remove it
-└── style/
-    ├── base/               ~ You can remove this
-    ├── framework/          ~ You can remove this
-    ├── modules/            ~ You can remove this
-    ├── vendor/
-    |   ├── font-awesome/
-    |   |   ├── fonts/      ~ Keep this folder
-    |   |   └── scss/       ~ You can remove this
-    |   └── normalize/      ~ You can remove this
-    ├── master.css          ~ THIS IS THE MOST IMPORTANT GUY!
-    └── master.scss         ~ You can remove this
-```
+Project/
+├── Demo/                       ~ You can remove this
+│   └── { all demo files }
+└── Content/Site/
+    ├── css/                    ~ THIS IS THE MOST IMPORTANT FOLDER!
+    └── scss/                   ~ You can remove this
+    ```
 
 If you want, you don't need to use compiled version and use `*.scss` files and change variables (`style/base/variable.scss`) to change color patterns in you PartBee framework version.
 
