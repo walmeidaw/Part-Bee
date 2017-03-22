@@ -24,7 +24,7 @@ Project/
 └── Content/Site/
     ├── css/                    ~ THIS IS THE MOST IMPORTANT FOLDER!
     └── scss/                   ~ You can remove this
-    ```
+```
 
 If you want, you don't need to use compiled version and use `*.scss` files and change variables (`style/base/variable.scss`) to change color patterns in you PartBee framework version.
 
