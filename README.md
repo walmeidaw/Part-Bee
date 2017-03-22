@@ -31,6 +31,9 @@ If you want, you don't need to use compiled version and use `*.scss` files and c
 ## The feature list
 
 It's avaliable on PartBee a lot of features: grid layout; responsive styles and components.
+
 If you download the package you can use a debug cheet mode at `demo/demo.html` pressing `↑ ↓ d e v`.
+
 It shows: grid layout debug and the actual screen size.
+
 It do: execute a JS code to put a css class `debug` in the `<body>` element. (You can do it manually, it will work fine).
