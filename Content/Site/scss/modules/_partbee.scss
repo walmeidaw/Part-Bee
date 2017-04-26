@@ -67,23 +67,10 @@ $sides: top right bottom left;
     border-radius: 2px;
     @include transition(300ms);
 
-    .alpha &,
-    .beta &{
-        border-color: darken($c_beta, 5%);
-        &:hover{
-            border-color: darken($c_beta, 15%);
-            @include shadowbox(10px, darken($c_beta, 5%));
-        }
-    }
-
-    .gama &,
-    .tetha &{
-        border-color: darken($c_tetha, 5%);
-        &:hover{
-            border-color: darken($c_tetha, 15%);
-            @include shadowbox(10px, darken($c_tetha, 5%));
-        }
-    }
+    .alpha &{@include framebox_custom($c_alpha);}
+    .beta &{ @include framebox_custom($c_beta); }
+    .gama &{ @include framebox_custom($c_gama); }
+    .tetha &{ @include framebox_custom($c_tetha); }
 
     &>img{
         border-radius: 2px;
@@ -101,7 +88,7 @@ label{
         text-align: right;
     }
 }
-input{
+input, select{
     font: $font_text;
     padding: 6px 10px;
     height: 40px;
@@ -120,6 +107,21 @@ input{
     }
 }
 
+textarea{
+      font: $font_text;
+      line-height: 1.2;
+      padding: 6px 10px;
+      border: 1px solid darken($c_omega, 10%);
+      border-radius: 2px;
+      margin-bottom: $md/3;
+      width: 100%;
+
+      &.form-control{
+          display: block;
+          width: 100%;
+      }
+}
+
 .form-inline{
     .control-label,
     .form-group,
@@ -130,6 +132,22 @@ input{
     .form-group,
     .form-control{
         margin: 0px $md/3;
+    }
+}
+
+.form-block{
+    .control-label,
+    .form-group,
+    .form-control{
+        display: block;
+        width: 100%;
+        text-align: left !important
+    }
+    .form-group{
+        margin: 0px $md/3;
+    }
+    .form-control{
+      margin: 0px;
     }
 }
 

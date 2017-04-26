@@ -29,12 +29,12 @@
 
     padding:16px 0px;
 
-    content: "Desenvolvido por";
+    content: "Powered by";
     white-space: nowrap;
 
     @include translate(-100%, 0);
     @include mediaBySize(xs){
-      content: "Por";
+      content: "By";
     }
   }
 
@@ -44,7 +44,7 @@
   }
 
   &.alpha{@include logo($c_alpha);}
-  &.betha{ @include logo($c_beta); }
+  &.beta{ @include logo($c_beta); }
   &.gama{ @include logo($c_gama); }
   &.tetha{ @include logo($c_tetha); }
   &.omega{ @include logo($color_text_default); }

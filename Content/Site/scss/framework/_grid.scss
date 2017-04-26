@@ -6,7 +6,14 @@ $settings: (
 
 @mixin renderGridStyles($settings) {
     @each $key, $breakpoint in $breakpoints {
-         @if $key == xs{
+        @include mediaForSize($key){
+          .hidden-#{$key}{ display: none !important; }
+          .visible-#{$key}-block{ display: block !important; }
+          .visible-#{$key}-inline{ display: inline !important; }
+          .visible-#{$key}-inline-block{ display: inline-block !important; }
+        }
+
+        @if $key == xs{
             @include renderGrid($key, $settings);
         }
         @else {
@@ -32,7 +39,8 @@ $settings: (
 }
 
 @mixin renderGrid($key, $settings) {
-    $i: 1;
+    $i: 0;
+    
     .col-#{$key}-offset-0 {
         @include noBootstrapStatus(true){
             margin-left: 0;
@@ -50,18 +58,35 @@ $settings: (
                 @if $key == xs{
                   @include mediaBySize(xs){
                     margin-top: $md/3;
-                    margin-bottom: $md/3;  
+                    margin-bottom: $md/3;
                   }
                 }
             }
 
             @extend %col-debug;
         }
+
+        // Offset
         .col-#{$key}-offset-#{$i} {
             @include noBootstrapStatus(true){
                 margin-left: 100% * $i / map-get($settings,"columns");
             }
         }
+
+        // Pull
+        .col-#{$key}-pull-#{$i} {
+            @include noBootstrapStatus(true){
+                right: 100% * $i / map-get($settings,"columns");
+            }
+        }
+
+        // Push
+        .col-#{$key}-push-#{$i} {
+            @include noBootstrapStatus(true){
+                left: 100% * $i / map-get($settings,"columns");
+            }
+        }
+
         $i: $i+1;
     }
 }
@@ -88,13 +113,11 @@ $settings: (
             min-height: 1px;
         }
     }
-
     %col-debug{
         .debug &{
             @extend %debug;
         }
     }
-
     %debug {
         padding-right: 0;
         padding-left: 0;
@@ -163,16 +186,23 @@ body.debug {
         display: block;
         border-radius: 2px;
         color: $color_text_contrast;
-        mix-blend-mode: multiply;
-        @include noBootstrapStatus(true){    background-color: $c_alpha; }
-        @include noBootstrapStatus(false){   background-color: $c_gama;  }
+        border: 1px solid $color_text_default;
+        @include noBootstrapStatus(true){
+          border-color: darken($c_alpha, 20%);
+          background-color: $c_alpha;
+        }
+        @include noBootstrapStatus(false){
+          border-color: darken($c_gama, 20%);
+          background-color: $c_gama;
+        }
     }
 
     &:after {
         @extend %debug-labels;
         left: 35px;
-        mix-blend-mode: multiply;
-        @include noBootstrapStatus(true){     color: $c_alpha;    }
-        @include noBootstrapStatus(false){    color: $c_gama;    }
+        padding: 0px 4px;
+        background-color: $color_text_contrast;
+        @include noBootstrapStatus(true){     color: $color_text_default;    }
+        @include noBootstrapStatus(false){    color: $color_text_default;    }
     }
 }

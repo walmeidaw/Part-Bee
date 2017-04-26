@@ -48,7 +48,7 @@
     animation-name: rotating;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    @include transform(-50%, 0, 0deg);
+    @include transform(-50%, 0, 0deg, 1);
     animation-fill-mode: forwards;
 }
 
@@ -65,7 +65,7 @@
     font-size: 40px;
     font-weight: 300;
     line-height: 1;
-    @include transform(-50%, 0, 0deg);
+    @include transform(-50%, 0, 0deg, 1);
     animation-fill-mode: forwards;
 
     b {

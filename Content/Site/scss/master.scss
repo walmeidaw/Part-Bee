@@ -1,10 +1,10 @@
 // PARTBEE
 /**
-  * ╦╔╦╗╔═╗╔═╗╦═╗╔╦╗╔═╗╔╗╔╔╦╗╔═╗
-  * ║║║║╠═╝║ ║╠╦╝ ║ ╠═╣║║║ ║ ║╣
-  * ╩╩ ╩╩  ╚═╝╩╚═ ╩ ╩ ╩╝╚╝ ╩ ╚═╝
+  * ╦╔╦╗╔═╗╔═╗╦═╗╔╦╗╔═╗╔╗╔╔╦╗
+  * ║║║║╠═╝║ ║╠╦╝ ║ ╠═╣║║║ ║
+  * ╩╩ ╩╩  ╚═╝╩╚═ ╩ ╩ ╩╝╚╝ ╩
   *
-  * Não alterar esse arquivo, pois ele é gerado automaticamente a partir de ../scss/master.scss
+  * Do not change
 **/
 
 //Vendor
@@ -13,15 +13,13 @@
 
 // Base
 @import 'base/variables';        // Framework's Variables
-//@import 'base/autocolor';      // Randomize Colors
-@import 'base/configs';          // Framework's Variables
 @import 'base/mixins';           // Framework's Mixins
 @import 'base/placeholders';     // Framework's Placeholders
-@import 'base/fonts';            // Framework's Font Load
 
 // Frameworks
 @import 'framework/core';        // Framework's Core
 @import 'framework/grid';        // Framework's Grid System + Grid debug system
+// @import 'framework/grid_alt';    // Grid 10 cols
 @import 'framework/bootstraping';// Framework's Bootstrap theming
 
 // modules

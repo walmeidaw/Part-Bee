@@ -1,1 +1,7 @@
 @import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Open+Sans+Condensed:300,700');
+
+// Fonts Settings
+$font_default: 300 15px/1.5 "Open Sans", sans-serif; // Default font settings for document
+$font_title: 300 24px "Open Sans", sans-serif; // Default font settings for headers elements
+$font_text: 300 15px/1.5 "Open Sans", sans-serif; // Default font settings for commom text in documents (<p> elements in <article> tags)
+$font_debug: 300 16px/1 "Open Sans Condensed", sans-serif;

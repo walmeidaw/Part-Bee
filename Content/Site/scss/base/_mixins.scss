@@ -87,6 +87,39 @@
         }
     }
 }
+@mixin custonNavigation($main_color) {
+  @extend %menu_generics;
+  background-color: $main_color;
+  nav[role="menu"] {
+      a {
+          @include mediaBySize(xs) {
+              color: $main_color;
+          }
+
+          &:focus,
+          &:hover {
+              background-color: darken($main_color, 10%);
+              @include mediaBySize(xs) {
+                  color: darken($main_color, 10%);
+                  background-color: lighten($main_color, 35%);
+              }
+          }
+
+          &.active,
+          &:active {
+              background-color: darken($main_color, 15%);
+          }
+      }
+  }
+}
+
+@mixin framebox_custom($main_color) {
+    border-color: darken($main_color, 10%);
+    &:hover, &:focus, &:active{
+        border-color: darken($main_color, 15%);
+        @include shadowbox(10px, darken($main_color, 10%));
+    }
+}
 // CSS3 Mixins
 @mixin transform($tX, $tY, $r, $s) {
     -webkit-transform: translateX($tX) translateY($tY) rotate($r) scale($s);
@@ -140,6 +173,12 @@
 @mixin mediaForSize($size) {
     $media_data: map-get($breakpoints, $size);
     @include media(map-get($media_data, "rangeQuery")) {
+         @content;
+    }
+}
+@mixin mediaUpSize($size) {
+    $media_data: map-get($breakpoints, $size);
+    @include media(map-get($media_data, "minQuery")) {
          @content;
     }
 }

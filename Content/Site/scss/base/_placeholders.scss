@@ -72,3 +72,33 @@
         color: $color_text_default;
     }
 }
+
+// Nav Generics
+%menu_generics{
+    nav[role="menu"] {
+        @include mediaBySize(xs) {
+            border: none;
+            background-color: $color_text_contrast;
+        }
+
+        a {
+            color: $color_text_contrast;
+            background: transparent;
+
+            &:after {
+                display: none;
+                content: none;
+            }
+
+            &:focus,
+            &:hover {
+                color: $color_text_contrast;
+            }
+
+            &.active,
+            &:active {
+                color: $color_text_contrast;
+            }
+        }
+    }
+}

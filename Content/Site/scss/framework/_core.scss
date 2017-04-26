@@ -23,8 +23,7 @@ a{
     }
 
     &:focus {
-        color: $color_text_contrast;
-        background: $c_alpha;
+        color: darken($c_alpha, 20%);
         border-radius: 4px;
         outline: none;
         text-decoration: none;
@@ -49,16 +48,28 @@ h1,h2{
     @extend %heading;
     font-size: 40px;
     color: $c_alpha;
+
+    .contrast &{
+      color: $color_text_contrast;
+    }
 }
 h3,h4{
     @extend %heading;
     font-size: 30px;
     color: darken($c_alpha, 10%);
+
+    .contrast &{
+      color: $color_text_contrast;
+    }
 }
 h5,h6{
     @extend %heading;
     font-size: 24px;
     color: darken($c_alpha, 20%);
+
+    .contrast &{
+      color: $color_text_contrast;
+    }
 }
 h1,h2,h3,h5{
     text-transform: uppercase;

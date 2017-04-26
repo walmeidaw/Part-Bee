@@ -1,23 +1,6 @@
-$color_soft: #e0e0e0; // For disabled and discreet things
-$color_text_default: #2c2c2c; // Text default
-$color_text_contrast: #ffffff; // Text in contrast (in case of backgrounds inverted)
-
-// Background Settings
-$background: #ffffff; // Background
-
-// Themed Colors
-$c_alpha: #fd5244; // Main color DEFAULT #4a1190 -> #fd5244
-$c_beta: darken($c_alpha, 15%);
-$c_gama: #720bb3; // A contrast color DEFAULT #0d9ed4 -> #720bb3
-$c_tetha: darken($c_gama, 15%);
-$c_omega: #f4f4f4;
-
-// Fonts Settings
-$font_default: 300 15px/1.5 "Open Sans", sans-serif; // Default font settings for document
-$font_title: 300 24px "Open Sans", sans-serif; // Default font settings for headers elements
-$font_text: 300 15px/1.5 "Open Sans", sans-serif; // Default font settings for commom text in documents (<p> elements in <article> tags)
-$font_debug: 300 16px/1 "Open Sans Condensed", sans-serif;
-
-// Misc Settings
 $md: 15px; // Margin Default Value
 $pd: 15px; // Padding Default Value
+
+@import 'colors';            // Framework's Font Load
+@import 'fonts';            // Framework's Font Load
+@import 'configs';          // Framework's Variables

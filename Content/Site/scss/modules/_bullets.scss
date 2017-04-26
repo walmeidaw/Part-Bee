@@ -90,7 +90,7 @@ $xs_size: 40px;
 
 @mixin makeCustomBullet($name, $color) {
     .bullet{
-      .#{$name} &{
+      .bullet-list.#{$name} &{
         &:not(.no-background){
           color: $color;
           background-color: $color_text_contrast;
@@ -106,7 +106,7 @@ $xs_size: 40px;
         }
       }
 
-      .#{$name}.fill &{
+      .bullet-list.#{$name}.fill &{
         &:not(.no-background){
           background-color: $color;
           color: $color_text_contrast;
@@ -124,6 +124,7 @@ $xs_size: 40px;
     }
 }
 
+@include makeCustomBullet("deafult", #333333);
 @include makeCustomBullet("alpha", $c_alpha);
 @include makeCustomBullet("beta", $c_beta);
 @include makeCustomBullet("gama", $c_gama);

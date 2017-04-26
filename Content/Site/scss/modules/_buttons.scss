@@ -44,6 +44,11 @@ $buttons: (
         width: 100%;
     }
 
+    &.btn-big{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
     &:hover{
         background-color: darken($color_soft, 3%);
         border-color: darken($color_soft, 7%);
@@ -64,9 +69,9 @@ $buttons: (
         $b: map-get($style, 'border-color');
 
         &.btn-#{$key}{
-            background-color: $bg;
-            color: $c;
-            border-color: $b;
+            background-color: $bg !important;
+            color: $c !important;
+            border-color: $b !important;
 
             @if $key == default{
                 &:hover{
