@@ -1,7 +1,7 @@
 @mixin logo($color) {
   $logo: 'data:image/svg+xml;utf8, <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="490px" height="564px"><path fill-rule="evenodd"  fill="' + $color + '" d="M245.000,564.000 L0.781,423.000 L0.781,141.000 L245.000,-0.000 L489.219,141.000 L489.219,423.000 L245.000,564.000 Z"/></svg>';
   background: none;
-  background-image: url($logo) !important;
+  background-image: url($logo);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 28px 28px;

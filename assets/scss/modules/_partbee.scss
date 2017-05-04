@@ -1,5 +1,4 @@
 $align_list: left right center justify;
-$selector: ();
 @each $item in $align_list{
     .text-align-#{$item}{
         text-align: $item;
@@ -9,6 +8,21 @@ $selector: ();
         @include mediaBySize($key){
             .text-align-#{$key}-#{$item}{
                 text-align: $item;
+            }
+        }
+    }
+}
+
+$vertical_align_list: baseline length sub super top text-top middle bottom text-bottom;
+@each $item in $vertical_align_list{
+    .vertical-align-#{$item}{
+        vertical-align: $item;
+    }
+
+    @each $key, $breakpoint in $breakpoints {
+        @include mediaBySize($key){
+            .vertical-align-#{$key}-#{$item}{
+                vertical-align: $item;
             }
         }
     }
@@ -76,8 +90,16 @@ $sides: top right bottom left;
     }
 }
 
-.no-padding{
-    padding: 0px;
+/* Responsive Display */
+$display: block inline none table table-cell inline-block;
+@each $item in $display{
+    .display-#{$item}{ display: $item; }
+    @each $key, $breakpoint in $breakpoints {
+        @include mediaBySize($key){
+          .display-#{$key}-#{$item}{ display: $item !important; }
+          .display-#{$key}-#{$item}{ display: $item !important; }
+        }
+    }
 }
 
 /* Others components */

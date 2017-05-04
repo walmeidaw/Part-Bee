@@ -90,6 +90,24 @@
 @mixin custonNavigation($main_color) {
   @extend %menu_generics;
   background-color: $main_color;
+
+  &.nav-block{
+    background-color: transparent;
+    nav[role="menu"] {
+      a{
+        display: block;
+        background-color: $main_color;
+        & + a{
+          margin-top: 5px;
+        }
+
+        @include mediaBySize(xs) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
   nav[role="menu"] {
       a {
           @include mediaBySize(xs) {
