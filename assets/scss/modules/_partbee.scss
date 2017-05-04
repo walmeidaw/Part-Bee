@@ -37,8 +37,24 @@ $sides: top right bottom left;
         padding-#{$item}: $pd;
     }
 
+    .no-padding{
+      padding: 0px;
+    }
+
     .no-padding-#{$item}{
         padding-#{$item}: 0px;
+    }
+
+    .margin-#{$item}{
+        margin-#{$item}: $pd;
+    }
+
+    .no-margin{
+      margin: 0px;
+    }
+
+    .no-margin-#{$item}{
+        margin-#{$item}: 0px;
     }
 
     @each $key, $breakpoint in $breakpoints {
@@ -47,6 +63,13 @@ $sides: top right bottom left;
                 padding-#{$item}: $pd !important;
             }
             .no-padding-#{$key}-#{$item}{
+                padding-#{$item}: 0px;
+            }
+
+            .margin-#{$key}-#{$item}{
+                padding-#{$item}: $pd !important;
+            }
+            .no-margin-#{$key}-#{$item}{
                 padding-#{$item}: 0px;
             }
         }
